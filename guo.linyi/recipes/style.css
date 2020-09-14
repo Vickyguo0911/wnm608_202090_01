@@ -1,0 +1,19 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	background-color: #ebebeb
+}
+
+ul li{ color: #cf4424
+ }
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+   color: #cf4424
+}
+
+.center {
+margin-left:auto;
+margin-right:auto;
+width:75%;
+}
