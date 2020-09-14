@@ -5,30 +5,39 @@
 	<title>Vicky's Recipes</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+   
 </head>
 
-<h1>Vicky's Recipes</h1>
-	<div class="banner">
-		    <img class="banner" src="img/banner.jpg" width="1000" height="400">
-	    </div>
+	  <div class="banner">
+          <img src="img/banner02.png" alt="banner" width="1200" height="250">
+     </div>
 <header>
 	
 </header>
 <body>
 
-	<h1>Beef Sushi Roll</h1>
+	<div class="tab-group">
+      <ul class="tabs">
+         <li class="tab active">Meat Double Sushi Roll </li>
+         <li class="tab">Healthy Whole Wheat Waffles </li>
+         <li class="tab">Deep Fried Prawns </li>
+       </ul>
 
-	<img src="img/sushi.jpg" alt="sushi" width="500" height="400">
+  <div class="contents">
+   <div class="content active">
+  <h3> Meat Double Sushi Roll</h3>
+  <img src="img/sushi02.jpg" alt="sushi" width="700" height="700">
 	<h2> Ingredients</h2>
 	<ul>
 		<li>Rice</li>
         <li>Plastic wrap</li>
         <li>Vegetables</li>
-<li>Egg</li>
-<li>Ground beef</li>
-<li>Roasted seaweed</li>
-<li>Pork sung</li>
+        <li>Egg</li>
+        <li>Ground beef</li>
+        <li>Roasted seaweed</li>
+        <li>Pork sung</li>
 	</ul>
 	<h2> Instructions</h2>
 
@@ -39,7 +48,71 @@
            </li>
            <li>Roll up the sushi.</li>
 		</ol>
+</div>
+<div class="content">
+ <h3> Healthy Whole Wheat Waffles</h3>
+  <img src="img/waffles.jpg" alt="waffled" width="700" height="900">
+	<h2> Ingredients</h2>
+	<ul>
+		<li>Whole wheat flour</li>
+        <li>Coconut flour</li>
+        <li>Low fat milk</li>
+        <li>Rice cake</li>
+        <li>Yeast/Sweetener</li>
+        <li>Waffle maker</li>
+	</ul>
+	<h2> Instructions</h2>
 
-	<p></p>
+		<ol>
+		   <li>In a large mixing bowl whisk together the whole wheat flour, coconut flour, low-fat milk, sweetener, yeast and pour some water until well combined.</li>
+		   <li>Then, start to roll it into a ball.</li>
+           <li>Cover the dough with plastic warp and waiting for 50mins.</li>
+           <li>Tuck the rice cake into the dough</li>
+           <li>Preheat your waffle maker. Cook the waffles until golden brown and crisp, wait for 1-2mins.</li>
+		</ol>
+	</div>
+
+<div class="content">
+	<h3> Deep Fried Prawns</h3>
+  <img src="img/shrimp.jpg" alt="waffles" width="800" height="600">
+	<h2> Ingredients</h2>
+	<ul>
+		<li>Shrimp</li>
+        <li>Ginger</li>
+        <li>Garlic</li>
+        <li>Green onion</li>
+        <li>Soy source / sugar / oyster sauce / </li>
+        <li>Oil / Salt</li>
+        <li>Frozen Green bean</li>
+	</ul>
+	<h2> Instructions</h2>
+
+		<ol>
+		   <li>Soak the shrimp in warm, lightly salted water for 5 minutes.</li>
+		   <li>Prepare all the ingredients. Mix all the seasoning well.
+</li>
+           <li>Rinse in cold water, drain and pat dry with paper towels. Cut off the head and whisks.</li>
+           <li>Heat the oil in a wok over medium-high heat. Put the garlic and ginger into the pot. Then place the prawns in the hot oil and turning as needed, until golden brown.</li>
+           <li>Put all the seasonings in and sprinkle the green beans and chopped green onion on top.</li>
+		</ol>
+	
+</div>
+<footer class="footer">
+  
+     <p class="copyright"> ©2020 Linyi Guo(Vicky). All rights reserved / Vicky's recipes </p>
+
+  </footer>
+
+<script>
+	$(".tab-group .tab").on("click",function(){
+		let id = $(this).index();
+
+		$(this).addClass("active")
+		  .siblings().removeClass("active");
+		$(this).closest(".tab-group")
+		   .find(".content").eq(id).addClass("active")
+		   .siblings().removeClass("active");
+	 })
+</script>
 </body>
 </html>

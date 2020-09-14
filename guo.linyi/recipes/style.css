@@ -1,7 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.1em;
-	background-color: #ebebeb
+	background-color: white;
 }
 
 ul li{ color: #cf4424
@@ -17,3 +17,54 @@ margin-left:auto;
 margin-right:auto;
 width:75%;
 }
+
+.banner {
+	margin-left:auto;
+    margin-right:auto;
+    width:75%;
+}
+
+.footer {
+   position: center;
+   margin-top: 5%;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #cf4424;
+   color: white;
+   text-align: center;
+   padding: 5px;
+   }
+
+    .tabs {
+    	margin: 50px 50px 0 -4px;
+    	padding: 0;
+    	list-style-type: none;
+    	border-bottom: 1px solid red;
+    	display:flex;
+	 }
+    .tab {
+	 margin:0 0.5em;
+	 padding:1em 1em;
+	 border: solid red;
+	 border-width: 1px 1px 0;
+	 border-radius: 5px 5px 0 0;
+	}
+    .tab.active {
+	       background-color: #fcd5cc ;
+	}
+	.contents {
+		border:solid red;
+		border-width:0 0px 0px;
+	    padding: 20px;
+	}	
+    .content {
+    	margin: 50px;
+    	padding: 0;
+	display: none;
+	padding:0px;
+    }
+    .content.active {
+	       display: block;
+	       padding: 5px;
+    }
