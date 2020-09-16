@@ -1,4 +1,4 @@
-body {
+main {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.1em;
 	background-color: white;
@@ -7,8 +7,13 @@ body {
 ul li{ color: #cf4424
  }
 
+ h2 {
+	font-family: 'Lobster', cursive;
+   color: #cf4424
+}
+
 h3 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lobster', cursive;
    color: #cf4424
 }
 
