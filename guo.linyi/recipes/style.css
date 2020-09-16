@@ -1,20 +1,15 @@
-main {
-	font-family: 'Roboto', sans-serif;
+body {
+	font-family: 'roboto', sans-serif;
 	font-size: 1.1em;
 	background-color: white;
 }
 
-ul li{ color: #cf4424
+ul li{ color: #cf4424;
  }
 
- h2 {
-	font-family: 'Lobster', cursive;
-   color: #cf4424
-}
-
-h3 {
-	font-family: 'Lobster', cursive;
-   color: #cf4424
+h2{
+	font-family: 'roboto', sans-serif;
+    color: #542e01;
 }
 
 .center {
