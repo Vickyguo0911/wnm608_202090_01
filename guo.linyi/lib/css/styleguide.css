@@ -1,4 +1,6 @@
 /*CSS RESET */
+
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -8,7 +10,7 @@
 /* css valubale */
 
  
- :root{
+ : root {
 	--color-neutral-light:#eee;
 	--color-neutral-medium:#999;
 	--color-neutral-dark:#444;
@@ -32,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Camburia, Georgia, "Tims New Roman", serif;
+	font-family: Camburia, Georgia, "Times New Roman", serif;
 }
 
 a {
@@ -74,14 +76,14 @@ a:hover {
 .nav ul {
 	list-style-type:none; 
 	margin-top:0;
-	padding-left:0;
+	padding-bottom: 0;
 	padding-left:0;
 
 }
 
 
 .navbar {
-	background-color: var(--color-neutral-dark)
+	background-color: var(--color-neutral-dark);
 	color:var(--color-neutral-light);
 	line-height: var(--header-height);
 }
