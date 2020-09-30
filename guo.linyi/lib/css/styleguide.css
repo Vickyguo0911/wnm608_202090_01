@@ -179,6 +179,28 @@ a:hover {
       background-color:var(--color-neutral-medium);
    }
 
+
+
+.well {
+   padding:0.5em;
+   background-color: var(--color-neutral-light)
+   margin: 1px;
+}
+
+.well .well {
+   
+   background-color: var(--color-white)
+  
+}
+
+
+
+
+
+
+
+
+
    .card.flat {
       padding:0;
    }
