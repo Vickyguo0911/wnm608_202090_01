@@ -2,11 +2,34 @@
    --color-neutral-light:#f0ecec;
    --color-neutral-medium:#9e8d8d;
    --color-neutral-dark:#392f2f;
-}
 
+
+    --color-main-light: #bcebff;
+    --color-main-medium: #17a6e2;
+    --color-main-dark: #08435c;
+
+    --color-alt-light: #e5d7fa;
+    --color-alt-medium: #6515e2;
+    --color-alt-dark: #27055c;
+
+    
+    --color-warning: #ea9310;
+    --color-error: #d90c63;
+    --color-purchase: #49ec80;
+
+    --color-neutral-yellow:#ffcd00;
+    --color-neutral-organge:#f85e06;
+    --color-neutral-purple:#6069ff;
+
+    --color-main-light: #fff1d9;
+
+
+
+}
 body {
    font-family:Calibri, sans-serif;
    background-color:#f9f9f9;
+   padding-bottom:10em;
 }
 
 
@@ -43,9 +66,6 @@ body {
 	height: 100%;
 }
 
-.footer {
-	color:black;
-}
 
 
 @media(max-width: 600px){
