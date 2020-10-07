@@ -182,35 +182,7 @@
 
 
 
-   <div class="container">
-      <div class="card soft">
-         <div>
-            <h3>Layout</h3>
-         </div>
-      </div>
-
-      <div>
-         <h3>Title</h3>
-      </div>
-      <div class="grid gap">
-         <!-- .col-xs-12.col-md-4*3>.card.soft>{Item $} -->
-         <div class="col-xs-12 col-md-4">
-            <div class="card soft"><h3>Item 1</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
-            </div>
-         </div>
-         <div class="col-xs-12 col-md-4">
-            <div class="card soft"><h3>Item 2</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
-            </div>
-         </div>
-         <div class="col-xs-12 col-md-4">
-            <div class="card soft"><h3>Item 3</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
-            </div>
-         </div>
-      </div>
-   </div>
+   
 
 
 
@@ -269,22 +241,114 @@
             </div>
             <div class="col-xs-8"></div>
          </div>
-
-         
       </div>
+
+
       <div class="pill-nav">
       	<div class=" container display-flex flex-align-center">
       		<div class="flex-none">
+<div class="card soft display-flex flex-justify-space-around">
   <a class="active" href="#home">Home</a>
   <a href="#Product">Products</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
   <a href="#cart">cart</a>
-  <input type="text" placeholder="Search..">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
 </div>
       
    </div>
 </div>
+<div class="container" id="buttons">
+	<h2>Buttons </h2>
+	<div class="card soft display-flex flex-justify-space-around">
+	  <div class="button mainbutton">Product</div>
+	  <div class="button secondarybutton">Add to cart</div>
+	  <div class="button thirdbutton">Check out</div>
+	  <div class="button fourthbutton">Confirm</div>
+</div>
+</div>
+ <div class="container" id="product list">
+	<h2> Product list </h2>
+	<div class="card soft light flex-justify-center grid">
+            <div class="card align-center col-xs-12 col-xl-4">
+               <img src="img/product01.png" alt="" style="height: 300px; ">
+               
+                <div class="article-body" >
+
+
+                  <h3>Ultra Facial Cream</h3>
+        
+
+               <p>Size:1.7oz/50ml </p>
+               <p>Item #2172526</p>
+               <p>$32.00</p>
+               
+ 
+               <button class="mainbutton " style="vertical-align:middle"><span> Product Details </span></button>
+            </div>
+         </div>
+
+            <div class="card flex-justify-center col-xs-12 col-xl-4" >
+               <img src="img/product02.png" alt="" style="height: 300px;">
+               <div class="article-body" >
+
+               <h3>Ultra Facial Cream</h3>
+       
+                <p>Size:1.7oz/50ml </p>
+               <p>Item #2172526</p>
+               <p>$32.00</p>
+               
+
+               <button class="mainbutton " style="vertical-align:middle"><span> Product Details </span></button>
+            </div>
+           
+           </div>
+           <div class="card flex-justify-center col-xs-12 col-xl-4" >
+               <img src="img/product03.png" alt="" style="height: 300px;">
+               <div class="article-body" >
+
+               <h3>Ultra Facial Cream</h3>
+           
+                <p>Size:1.7oz/50ml </p>
+               <p>Item #2172526</p>
+               <p>$32.00</p>
+               
+
+               <button class="mainbutton " style="vertical-align:middle"><span> Product Details </span></button>
+            </div>
+           </div>
+
+ </div>
+   <!---------------------------------------------------------->
+	  <div class="container" id="product list">
+	<h2> Product list 2 </h2>
+	<div class="display-flex flex-justify-space-around">
+</div>
+      <div class="grid gap">
+         <!-- .col-xs-12.col-md-4*3>.card.soft>{Item $} -->
+         <div class="col-xs-12 col-md-4">
+            <div class="card soft"><h3>Item 1</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <div class="card soft"><h3>Item 2</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <div class="card soft"><h3>Item 3</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
    
 </body>
 </html>
