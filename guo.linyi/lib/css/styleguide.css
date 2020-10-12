@@ -138,7 +138,7 @@ code {
 }
 
 .mainbutton:hover{
-   background-color: #fff1d9;
+   background-color: #ffcd00;
 }
 
 .secondarybutton {
@@ -149,31 +149,31 @@ code {
 }
 
 .secondarybutton:hover{
-   background-color: #fff1d9;
+   background-color: #ffcd00;
 }
 
 .thirdbutton {
   background-color:white ; 
   color: #6069ff ; 
-  border:2px solid #6069ff ;
+  border:2px solid #ffcd00 ;
   width: 160px;
   font-size: 16px;
 }
 
 .thirdbutton:hover{
-   background-color: #fff1d9;
+   background-color: #ffcd00;
 }
 
 .fourthbutton {
   background-color:white ; 
-  color: #f85e06 ; 
+  color: #ffcd00 ; 
   border:2px solid #f85e06 ;
   width: 160px;
   font-size: 16px;
 }
 
 .fourthbutton:hover{
-   background-color: #fff1d9;
+   background-color: #ffcd00;
 }
 
 
