@@ -469,7 +469,7 @@ code {
    outline:0;
 }
    .hotdog.dark {
-      background-color: var(--color-neutral-orange);
+      background-color: var(--color-neutral-yellow);
       color: var(--color-neutral-light);
    }
 
