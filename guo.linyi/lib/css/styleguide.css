@@ -15,6 +15,16 @@
    --color-black:#000;
 
    --header-height:3rem;
+
+   --color-neutral-light-yellow:#fff1d9;
+   --color-neutral-light-pink:#ffd8d2;
+   --color-neutral-light-blue:#d5e2e8;
+   --color-neutral-light-grey:#f3f3f3;
+
+   --color-neutral-yellow:#ffcd00;
+   --color-neutral-orange:#f85e06;
+   --color-neutral-purpleblue:#6069ff;
+
 }
 
 
@@ -54,8 +64,8 @@ code {
 }
 
 .colorconcepts {
-   width: 130px;
-   height:70px;
+   width: 140px;
+   height:65px;
 }
 
 .colorconcepts.lightyellow {
@@ -68,6 +78,10 @@ code {
 
 .colorconcepts.lightblue {
    background: #d5e2e8;
+}
+
+.colorconcepts.lightgrey {
+   background: #f3f3f3;
 }
 
 
@@ -259,14 +273,15 @@ code {
    background-color:#6069ff;
    color:var(--color-neutral-light);
    line-height:var(--header-height);
+   padding: 1.3em;
 }
 .navbar h1 {
-   font-size:1em;
+   font-size:1.3em;
    font-family: OpenSans,SourceSans Pro , sans-serif;
    margin:0;
 }
 .navbar a {
-   padding:0 0.8em;
+   padding:0 1em;
 }
 
 .footer {
@@ -417,26 +432,26 @@ code {
 }
 
 .table.striped tbody tr:nth-child(odd) {
-   background-color:var(--color-neutral-light);
+   background-color:#ffd8d2;
 }
 
 
 .table.lined.all tbody tr,
 .table.lined.horizontal tbody tr {
-   border-top:1px solid var(--color-neutral-medium);
+   border-top:1px solid #ffd8d2;
 }
 
 .table.lined.all th:not(:first-child),
 .table.lined.all td:not(:first-child),
 .table.lined.vertical th:not(:first-child),
 .table.lined.vertical td:not(:first-child) {
-   border-left:1px solid var(--color-neutral-medium);
+   border-left:1px solid #ffd8d2;
 }
 
 
 .table.lined.all,
 .table.lined.border {
-   border:1px solid var(--color-neutral-medium);
+   border:1px solid #ffd8d2;
 }
 
 
@@ -461,7 +476,7 @@ code {
 }
 .form-label {
     font-size: 0.8em;
-    color: var(--color-neutral-medium);
+    color: var(--color-neutral-purpleblue);
 }
 
 .btn,
@@ -472,7 +487,7 @@ code {
     font: inherit;
     border-radius: 0.3em;
     padding: 0.5em 1em;
-    background-color: var(--color-neutral-light);
+    background-color: #6069ff;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -489,7 +504,7 @@ code {
    }
 
    .btn.sell {
-      background-color:var(--color-purchase);
+      background-color:var(--color-neutral-light-blue);
    }
 
 

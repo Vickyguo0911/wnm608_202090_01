@@ -15,7 +15,7 @@
 
    <header class="navbar">
       <div class="container display-flex flex-align-center">
-         <div class="flex-none"><h1>Nature SkinCare Store </h1></div>
+         <div class="flex-none"><h1>Nature SkinCare Styleguide </h1></div>
       </div>
    </header>
 
@@ -38,32 +38,36 @@
  
    <div class="container" id="colorconcepts">
    	 	<h2>Color Concepts</h2>
-   	<div class="card soft grid display-flex flex-justify-space-evenly">
-      		<div class="col-xs-12 col-md-4">
+   	<div class="card soft grid display-flex display-flex flex-justify-space-around">
+   	
+      		<div class="col-xs-12 col-md-3">
    			<div class="colorconcepts lightyellow"> </div>
    			<p>#fff1d9</p>
    		</div>
-   		<div class="col-xs-12 col-md-4">
+   		<div class="col-xs-12 col-md-3">
    			<div class="colorconcepts lightpink"> </div>
    			<p>#ffd8d2</p>
    		</div>
-   		<div class="col-xs-12 col-md-4">
+   		<div class="col-xs-12 col-md-3">
    			<div class="colorconcepts lightblue"> </div>
    			<p>#d5e2e8</p>
    		</div>
-   		
+   		<div class="col-xs-12 col-md-3">
+   			<div class="colorconcepts lightgrey"> </div>
+   			<p>#f3f3f3</p>
+   		</div>
 
-   		<div class="col-xs-12 col-md-4">
+   		<div class="col-xs-12 col-md-3">
    			<div class="colorconcepts yellow"> </div>
    			<p>#ffcd00</p>
    		</div>
-   		<div class="col-xs-12 col-md-4">
+   		<div class="col-xs-12 col-md-3">
    			<div class="colorconcepts orange"> </div>
    			<p>#f85e06</p>
    		</div>
-   		<div class="col-xs-12 col-md-4">
+   		<div class="col-xs-12 col-md-3">
    			<div class="colorconcepts purpleblue"> </div>
-   			<p>#6069ff/p>
+   			<p>#6069ff</p>
    		</div>
 
 
@@ -75,7 +79,7 @@
       <h2>Typography</h2>
       <div class="card soft">
       	<h2>Font Choices</h2>
-      	<p>OpenSans / SourceSans Pro /sans-serif</p>
+      	<h4>OpenSans / SourceSans Pro /sans-serif</h4>
 
          <h3>Headings</h3>
          <div class="well">
@@ -228,38 +232,46 @@
 
       <div class="well">
 
+
+      <h3>Basic Card</h3>
+
+      <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
+
       <h3>Soft Card</h3>
 
       <div class="card soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
+
+
+   </div>
       
    </div>
    </div>
-
-
-   <div class="container">
-      <h2>View Window</h2>
-
-      <div class="view-window" style="background-image:url(img/banner03.jpg)"></div>
-
+ <div class="container" id="product list">
+	<h2> Title </h2>
+	<div class="display-flex flex-justify-space-around">
+</div>
+      <div class="grid gap">
+         <!-- .col-xs-12.col-md-4*3>.card.soft>{Item $} -->
+         <div class="col-xs-12 col-md-4">
+            <div class="card soft yellow"><h3>Item 1</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <div class="card soft pink"><h3>Item 2</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <div class="card soft blue"><h3>Item 3</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            </div>
+         </div>
+      </div>
    </div>
 
 
-   <div class="container" id="navigations">
-      <h2>Navigations</h2>
-      <script>
-      const makeNav = (classes='') => {
-         const links = ['home','product','about','cart'];
-         document.write(`
-         <div>
-         <nav class="${classes}">
-            <ul>
-               ${links.reduce((r,o,i)=>r+`<li><a href="#">${o}</a></li>`,'')}
-            </ul>
-         </nav>
-         </div>
-         `)
-      }
-      </script>
+   
       
          <!-- nav.nav>ul>li*4>a[href=#]{Link $} -->
          <!-- <nav class="nav">
@@ -279,11 +291,7 @@
       </div>
   -->
 
-<div class="card soft">
-         <h3>Store Nav</h3>
-         <script>makeNav('nav stretch')</script>
-      </div>
-  </div>
+
 
  <!--     <div class="pill-nav">
       	<div class=" container display-flex flex-align-center">
@@ -306,17 +314,9 @@
 </div>
 -->
 
-<div class="container" id="buttons">
-	<h2>Buttons </h2>
-	<div class="card soft display-flex flex-justify-space-around">
-	  <div class="button mainbutton">Product</div>
-	  <div class="button secondarybutton">Add to cart</div>
-	  <div class="button thirdbutton">Check out</div>
-	  <div class="button fourthbutton">Confirm</div>
-</div>
-</div>
+
  <div class="container" id="product list">
-	<h2> Product list </h2>
+	<h2> Product list Version 1 </h2>
 	<div class="card soft light flex-justify-center grid">
             <div class="card align-center col-xs-12 col-xl-4">
                <img src="img/product01.png" alt="" style="height: 375px; ">
@@ -368,29 +368,7 @@
 
  </div>
    <!---------------------------------------------------------->
-	  <div class="container" id="product list">
-	<h2> Product list 2 </h2>
-	<div class="display-flex flex-justify-space-around">
-</div>
-      <div class="grid gap">
-         <!-- .col-xs-12.col-md-4*3>.card.soft>{Item $} -->
-         <div class="col-xs-12 col-md-4">
-            <div class="card soft"><h3>Item 1</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
-            </div>
-         </div>
-         <div class="col-xs-12 col-md-4">
-            <div class="card soft"><h3>Item 2</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
-            </div>
-         </div>
-         <div class="col-xs-12 col-md-4">
-            <div class="card soft"><h3>Item 3</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
-            </div>
-         </div>
-      </div>
-   </div>
+	 
 
  <script>
    const makeTable = (classes='') => {
@@ -673,9 +651,49 @@
          </div>
       </div>
    </div>
+
+   <div class="container">
+      <h2>View Window</h2>
+
+      <div class="view-window" style="background-image:url(img/banner03.jpg)"></div>
+
+   </div>
+
+
+   <div class="container" id="navigations">
+      <h2>Store Navigation</h2>
+      <script>
+      const makeNav = (classes='') => {
+         const links = ['home','product','about','cart'];
+         document.write(`
+         <div>
+         <nav class="${classes}">
+            <ul>
+               ${links.reduce((r,o,i)=>r+`<li><a href="#">${o}</a></li>`,'')}
+            </ul>
+         </nav>
+         </div>
+         `)
+      }
+      </script>
+
+      <div class="card soft">
+         <script>makeNav('nav stretch')</script>
+      </div>
+
+      <div class="container" id="buttons">
+	<h2>Buttons </h2>
+	<div class="card soft display-flex flex-justify-space-around">
+	  <div class="button mainbutton">Product</div>
+	  <div class="button secondarybutton">Add to cart</div>
+	  <div class="button thirdbutton">Check out</div>
+	  <div class="button fourthbutton">Confirm</div>
+</div>
+</div>
+
    <!--------------------------------------------------------------------------------------------->
 
-   <h3>Products list</h3>
+   <h3>Products list version 2</h3>
 
          <div class="grid gap">
             <div class="col-xs-12 col-md-4">

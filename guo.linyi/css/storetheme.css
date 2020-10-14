@@ -56,6 +56,11 @@ body {
   font-size: 30px;
 }
 
+.navbar {
+   background-color:#6069ff;
+   color:var(--color-neutral-light);
+   line-height:var(--header-height);
+
 [class*='col-']>.card {
 	height: 100%;
 	margin:0;
