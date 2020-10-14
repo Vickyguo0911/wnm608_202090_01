@@ -23,15 +23,30 @@
       <div class="card soft">
          <h2>Table of Contents</h2>
          <ul>
+         	<li><a href="styleguide/#colorconcepts">Color Concepts</a></li>
             <li><a href="styleguide/#typography">Typography</a></li>
             <li><a href="styleguide/#grid">Grid</a></li>
-            <ul>
+         <ul>
                <li><a href="styleguide/#basic-grid">Basic Grid</a></li>
                <li><a href="styleguide/#complex-grid">Complex Grid</a></li>
                <li><a href="styleguide/#responsive-grid">Responsive Grid</a></li>
             </ul>
+        
             <li><a href="styleguide/#card">Card</a></li>
+
+          
+            <li><a href="styleguide/#layout">Layout</a></li>
+
             <li><a href="styleguide/#navigations">Navigations</a></li>
+            <li><a href="styleguide/#product-list-version1">Product List version1</a></li>
+            <li><a href="styleguide/#tables">Tables </a></li>
+            <li><a href="styleguide/#forms">Forms </a></li>
+             <li><a href="styleguide/#buttons">Buttons </a></li>
+             <li><a href="styleguide/#products">Products </a></li>
+            <li><a href="styleguide/#view window">View Window </a></li>
+             <li><a href="styleguide/#store-navigation">store Navigation  </a></li>
+             <li><a href="styleguide/#single-item">Single Item </a></li>
+             <li><a href="styleguide/#product-list-version2">Product List Version2  </a></li>
          </ul>
       </div>
    </nav>
@@ -247,7 +262,7 @@
    </div>
    </div>
  <div class="container" id="product list">
-	<h2> Title </h2>
+	<h2> Layout  </h2>
 	<div class="display-flex flex-justify-space-around">
 </div>
       <div class="grid gap">
@@ -321,48 +336,47 @@
             <div class="card align-center col-xs-12 col-xl-4">
                <img src="img/product01.png" alt="" style="height: 375px; ">
                
-                <div class="article-body" >
+                <div class="Product-body-text" >
 
 
                   <h3>Ultra Facial Cream</h3>
         
 
-               <p>Size:1.7oz/50ml </p>
-               <p>Item #2172526</p>
-               <p>$32.00</p>
-               
- 
-               <button class="mainbutton " style="vertical-align:middle"><span> Shop now </span></button>
+               <div class="item-number">Item #2172526</div>
+	<div class="item-size">Size:1.7oz/50ml</div>
+	<div class="item-price">$125.00</div>
+ <br>
+               <a href="#" class="btn checkout inline">Shop now</a>
             </div>
          </div>
 
             <div class="card flex-justify-center col-xs-12 col-xl-4" >
                <img src="img/product02.png" alt="" style="height: 375px;">
-               <div class="article-body" >
+               <div class="Product-body-text" >
 
                <h3>Ultra Facial Cream</h3>
        
-                <p>Size:1.7oz/50ml </p>
-               <p>Item #2172526</p>
-               <p>$32.00</p>
+                <div class="item-number">Item #2172526</div>
+	<div class="item-size">Size:1.7oz/50ml</div>
+	<div class="item-price">$125.00</div>
                
-
-               <button class="mainbutton " style="vertical-align:middle"><span> Shop now </span></button>
+<br>
+               <a href="#" class="btn checkout inline">Shop now</a>
             </div>
            
            </div>
            <div class="card flex-justify-center col-xs-12 col-xl-4" >
                <img src="img/product03.png" alt="" style="height: 375px;">
-               <div class="article-body" >
+               <div class="Product-body-text" >
 
                <h3>Ultra Facial Cream</h3>
            
-                <p>Size:1.7oz/50ml </p>
-               <p>Item #2172526</p>
-               <p>$32.00</p>
+                <div class="item-number">Item #2172526</div>
+	<div class="item-size">Size:1.7oz/50ml</div>
+	<div class="item-price">$125.00</div>
                
-
-               <button class="mainbutton " style="vertical-align:middle"><span> Shop now </span></button>
+<br>
+               <a href="#" class="btn checkout inline">Shop now</a>
             </div>
            </div>
 
@@ -372,13 +386,13 @@
 
  <script>
    const makeTable = (classes='') => {
-      const head = ['ID','Office','Name','Email','Phone'];
+      const head = ['ID','Product Name','Quality','Size','Price'];
       const body = [
-         ['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-         ['512',"Fred McHale",'fmchale@academyart.edu','555-2424'],
-         ['522',"Michael Catanzaro",'mcatanzaro@academyart.edu','555-2424'],
-         ['514',"Andrea Pimentel",'apimentel@academyart.edu','555-2424'],
-         ['516',"DC Scarpelli",'dscarpelli@academyart.edu','555-2424'],
+         ['Ultra Facial Cream',"1",'1.7oz/50ml','$32.00'],
+         ['Ultra Facial Cream',"1",'1.7oz/50ml','$32.00'],
+         ['Ultra Facial Cream',"1",'1.7oz/50ml','$32.00'],
+         ['Ultra Facial Cream',"1",'1.7oz/50ml','$32.00'],
+         ['Ultra Facial Cream',"1",'1.7oz/50ml','$32.00'],
       ];
 
       document.write(`
@@ -681,7 +695,54 @@
          <script>makeNav('nav stretch')</script>
       </div>
 
-      
+       <div class="container" id="store button">
+        <h2>Buttons</h2>
+        <div class="card soft display-flex grid ">
+        <div class="col-3">
+            
+                <a href="#" class="btn checkout inline">Button</a>
+          </div>
+            <div class="col-3">
+                <a href="#" class="btn type inline ">Button</a>
+                </div>
+            <div class="col-3">
+            
+                <a href="#" class="btn sell inline ">Button</a>
+            </div>
+            <div class="col-3">
+            
+                <a href="#" class="btn shop inline">Button</a>
+         </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="single-item">
+        	<h2>Single item</h2>
+        	<div class="card soft grid">
+      <div class="col-xs-12 col-md-8">
+         <div class="item-image">
+         	<img src="img/banner03.jpg" alt="table" style="height: 400px"> 
+         </div>
+     </div>
+<div class="col-xs-12 col-md-4">
+	<div class="item-intro">
+	<h2>Facial Oil Set</h2>
+	<div class="item-number">Item #2172526</div>
+	<div class="item-size">Size:1.7oz/50ml</div>
+	<div class="item-price">$125.00</div>
+<br>
+<div class="item-intro item-body-text">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis, exercitationem sit incidunt aspernatur dolorum ullam, commodi.  
+</div>
+
+<br>
+<a href="#" class="btn checkout inline">Go shop now</a>
+    </div>
+  </div>
+ </div>
+              
+
 
    <!--------------------------------------------------------------------------------------------->
 
@@ -699,6 +760,7 @@
                         <br>
                         <div class="product-title">Ultra Facial Cream</div>
                         <br>
+ <a href="#" class="btn sell inline">Shop now</a>
 
               
                      </figcaption>
@@ -717,7 +779,7 @@
                         <br>
                         <div class="product-title">Ultra Facial Cream</div>
                          <br>
-
+ <a href="#" class="btn sell inline">Shop now</a>
                
 
                      </figcaption>
@@ -736,7 +798,7 @@
                         <div class="product-title">Ultra Facial Cream</div>
                          <br>
 
-               
+                <a href="#" class="btn sell inline">Shop now</a>
 
                      </figcaption>
                   </figure>

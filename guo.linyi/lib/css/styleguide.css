@@ -100,24 +100,6 @@ code {
 }
 
 
-.button{
-  display: inline-block;
-  border-radius: 2px;
-  background-color: #f85e06;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 16px;
-  padding: 30px;
-  width: 190px;
-  height: 75px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 20px;
-
-}
-
-
 
 /* Layout Classes */
 .container {
@@ -434,10 +416,32 @@ code {
    }
 
    .btn.sell {
+      background-color:var(--color-neutral-purpleblue);
+      color:var(--color-white);
+       
+   }
+
+   .btn.checkout {
       background-color:var(--color-neutral-orange);
       color:var(--color-white);
        
    }
+
+   .btn.type {
+      background-color: var(--color-white);
+   border:1px solid var(--color-purchase);
+   color:var(--color-neutral-purpleblue);  
+       
+   }
+
+
+    .btn.shop {
+      background-color: var(--color-white);
+   border:1px solid var(--color-neutral-orange);
+   color:var(--color-neutral-orange); 
+       
+   }
+
 
 .form-button {
    color:var(--color-white);
@@ -525,8 +529,8 @@ code {
     display: inline-block;
     width: 2em;
     height: 1em;
-    background-color: var(--color-neutral-light);
-    border: 0.1em solid var(--color-neutral-medium);
+    background-color: var(--color-neutral-light-blue);
+    border: 0.1em solid var(--color-neutral-purpleblue);
     border-radius: 1em;
     position: relative;
     font-size: 1.3em;
