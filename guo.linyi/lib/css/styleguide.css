@@ -117,78 +117,6 @@ code {
 
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.mainbutton{
-  background-color: #6069ff; 
-  color: white; 
-  width: 160px;
-  height: 50px;
-  font-size: 16px;
-
-}
-
-.mainbutton:hover{
-   background-color: #ffcd00;
-}
-
-.secondarybutton {
-  background-color: #f85e06; 
-  color: white; 
-  width: 160px;
-  font-size: 16px;
-}
-
-.secondarybutton:hover{
-   background-color: #ffcd00;
-}
-
-.thirdbutton {
-  background-color:white ; 
-  color: #6069ff ; 
-  border:2px solid #ffcd00 ;
-  width: 160px;
-  font-size: 16px;
-}
-
-.thirdbutton:hover{
-   background-color: #ffcd00;
-}
-
-.fourthbutton {
-  background-color:white ; 
-  color: #ffcd00 ; 
-  border:2px solid #f85e06 ;
-  width: 160px;
-  font-size: 16px;
-}
-
-.fourthbutton:hover{
-   background-color: #ffcd00;
-}
 
 
 /* Layout Classes */
@@ -390,11 +318,11 @@ code {
    }
 
    .card.dark {
-      background-color:var(--color-neutral-dark);
-      color:var(--color-white);
+      background-color:var(--color-neutral-light-pink);
+      color:var(--color-black);
    }
    .card.medium {
-      background-color:var(--color-neutral-medium);
+      background-color:var(--color-neutral-light-blue);
    }
 
 
@@ -487,7 +415,7 @@ code {
     font: inherit;
     border-radius: 0.3em;
     padding: 0.5em 1em;
-    background-color: #6069ff;
+    background-color: var(--color-neutral-purpleblue);
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -501,11 +429,25 @@ code {
 
    .btn.inline {
       width:initial;
+      color:var(--color-white);
+       
    }
 
    .btn.sell {
-      background-color:var(--color-neutral-light-blue);
+      background-color:var(--color-neutral-orange);
+      color:var(--color-white);
+       
    }
+
+.form-button {
+   color:var(--color-white);
+}
+
+.form-button.border {
+   background-color: var(--color-white);
+   border:1px solid var(--color-purchase);
+   color:var(--color-neutral-purpleblue);     
+}
 
 
 
@@ -516,14 +458,14 @@ code {
    width: 100%;
    /* line-height: 3rem; */
    font: inherit;
-   background-color: var(--color-neutral-light);
+   background-color: var(--color-neutral-light-grey);
    padding: 0.5em 1.5em;
    border-radius: 2em;
    border-width:0;
    outline:0;
 }
    .hotdog.dark {
-      background-color: var(--color-neutral-dark);
+      background-color: var(--color-neutral-orange);
       color: var(--color-neutral-light);
    }
 
@@ -563,9 +505,6 @@ code {
    pointer-events:none;
    color:var(--color-neutral-medium);
 }
-
-
-
 
 
 

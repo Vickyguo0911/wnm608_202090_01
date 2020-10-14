@@ -15,11 +15,16 @@
     
     --color-warning: #ea9310;
     --color-error: #d90c63;
-    --color-purchase: #49ec80;
+    --color-purchase: #6069ff;
+
+    --color-neutral-light-yellow:#fff1d9;
+   --color-neutral-light-pink:#ffd8d2;
+   --color-neutral-light-blue:#d5e2e8;
+   --color-neutral-light-grey:#f3f3f3;
 
     --color-neutral-yellow:#ffcd00;
-    --color-neutral-organge:#f85e06;
-    --color-neutral-purple:#6069ff;
+   --color-neutral-orange:#f85e06;
+   --color-neutral-purpleblue:#6069ff;
 
     --color-main-light: #bcebff;
 
@@ -60,6 +65,8 @@ body {
    background-color:#6069ff;
    color:var(--color-neutral-light);
    line-height:var(--header-height);
+}
+
 
 [class*='col-']>.card {
 	height: 100%;
