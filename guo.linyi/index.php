@@ -11,7 +11,7 @@
 
 
 
-   <div class="view-window" style="background-image:url(img/mountains001.jpg)">
+   <div class="view-window" style="background-image:url(img/product03.png)">
       <h2>Product Name</h2>
    </div>
    <div class="container">
