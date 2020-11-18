@@ -12,7 +12,7 @@
 
 
    <div class="view-window" style="background-image:url(img/product03.png)">
-      <h2>Product Name</h2>
+      <h2></h2>
    </div>
    <div class="container">
       <div class="card soft">
