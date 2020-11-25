@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
    <title>Store</title>
@@ -11,8 +15,8 @@
 
 
 
-   <div class="view-window" style="background-image:url(img/product03.png)">
-      <h2></h2>
+   <div class="view-window" style="background-image:url(img/storebanner.jpg)">
+      <h2>Nature Skin Care</h2>
    </div>
    <div class="container">
       <div class="card soft">
