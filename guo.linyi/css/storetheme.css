@@ -89,6 +89,12 @@ body {
     display:block;
     height:100%;
 }
+
+a.product-item:hover {
+  text-decoration:none;
+  transform:scale(1.01);
+}
+
 .product-item figure {
   margin:0;
 }
@@ -151,6 +157,12 @@ a:hover .product-item {
 .navbar {
   margin-bottom:1em;
 }
+
+.card :first-child,
+.card-section :first-child {
+  margin-top:0;
+}
+
 
 span.badge:not(:empty)::after {
   content:')';

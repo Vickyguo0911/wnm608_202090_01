@@ -41,10 +41,10 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                <div class="card-section">
                   <h2><?= $product->product_name ?></h2>
                   <div>&dollar;<?= $product->price ?></div>
+                  <div><a href="product_list.php?t=products_by_category&category=<?= $product->category ?>"><?= $product->category ?></a></div>
                </div>
                <div class="card-section">
-                  <div class="form-control">
-                     
+                  <div class="form-control"> 
                      <label for="product-amount" class="form-label">Amount</label>
                      <div class="form-select">
                         <select name="product-amount" id="product-amount">
@@ -64,12 +64,16 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                   </div>
                   <div class="form-control">
                      
-                     <label for="product-color" class="form-label">Color</label>
+                     <label for="product-size" class="form-label">Size</label>
                      <div class="form-select">
-                        <select name="product-color" id="product-color">
-                           <option value="red">Red</option>
-                           <option value="green">Green</option>
-                           <option value="blue">Blue</option>
+                        <select name="product-size" id="product-size">
+                           <option value="0.5oz">0.5oz</option>
+                           <option value="1.0oz">1.0oz</option>
+                           <option value="2.4oz">2.4oz</option>
+                           <option value="8.0oz">8.0oz</option>
+                           <option value="8.4oz">8.4oz</option>
+                           <option value="10.0oz">10.0oz</option>
+
                         </select>
                      </div>
                   </div>
@@ -77,10 +81,10 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                      <input type="submit" class="form-button" value="Add To Cart">
                   </div>
                </div>
-            </form>
+          </form>
          </div>
       </div>
-      <div class="card soft medium">
+   <div class="card soft medium">
          <p><?= $product->description ?></p>
       </div>
          <h2>Related Products</h2>

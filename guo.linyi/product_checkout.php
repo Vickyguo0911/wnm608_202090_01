@@ -16,7 +16,7 @@ include_once "lib/php/functions.php";
       <div class="card soft">
          <h2>Product Checkout</h2>
 
-         <a href="./">Back</a>
+         <a href="product_list.php">Back</a>
 
          <div>Fill in your information</div>
          <body>

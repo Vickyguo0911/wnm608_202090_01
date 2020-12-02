@@ -2,69 +2,73 @@
 
 include_once "lib/php/functions.php";
 
+
+function makeProductList($r,$o) {
+return $r.<<<HTML
+<div class="col-xs-12 col-md-4">
+   <a href="product_item.php?id=$o->id">
+      <figure class="product-item">
+         <div class="product-image">
+            <img src="img/products/$o->image_thumb" alt="">
+         </div>
+         <figcaption class="product-description">
+            <div class="product-title">$o->product_name</div>
+            <div class="product-price">&dollar;$o->price/piece</div>
+         </figcaption>
+
+        <a href="product_item.php?id=$o->id" class="btn sell inline">Shop now</a>
+      </figure>
+   </a>
+</div>
+HTML;
+}
+
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
    <title>Store</title>
 
    <?php include "parts/meta.php" ?>
+      <?php include "parts/navbar.php" ?>
 </head>
 <body>
    
-   <?php include "parts/navbar.php" ?>
 
 
 
-   <div class="view-window" style="background-image:url(img/storebanner.jpg)">
-      <h2>Discover our Products</h2>
-      </div>
 
-   <div class="container">
-      <div class="card soft">
-         <h2>Welcome to the Store</h2>
-         <h3>New Arrivals</h3>
-
-         <div class="grid gap">
-            <div class="col-xs-12 col-md-6">
-               <a href="#">
-                  <figure class="product-item">
-                     <div class="product-image">
-                        <img src="img/products/everyday_face_moisturizer.jpg" alt="">
-                     </div>
-                     <figcaption class="product-description">
-                        <div class="product-price">&dollar;32.00</div>
-                        <br>
-                        <div class="product-title">Everyday Face Moisturizer</div>
-                        <br>
- <a href="#" class="btn sell inline">Shop now</a>
-
-              
-                     </figcaption>
-                  </figure>
-
-               </a>
+   <div class="view-window" style="background-image:url(img/storebanner1.png)">
+    
+    <!--  <div class="card cta soft">
+      <h1>Discover our Products</h1> 
+  
+</div> -->
+      <div class="btn explore">
+             <a href="product_list.php?id=$o->id" class="btn.shop"><h1>Discover Our product</h1></a>
+   
             </div>
-            <div class="col-xs-12 col-md-6">
-               <a href="#" class="display-block">
-                  <figure class="product-item">
-                     <div class="product-image">
-                        <img src="img/products/sugar_lemon_body_lotion.jpg" alt="">
-                     </div>
-                     <figcaption class="product-description">
-                        <div class="product-price">&dollar;32.00</div>
-                        <br>
-                        <div class="product-title">Sugar Lemon Body Lotion</div>
-                         <br>
- <a href="#" class="btn sell inline">Shop now</a>
- </figcaption>
- </figure>
-               
+        
       </div>
-   </div>
 
 
 
+
+<?php include "parts/new_arrival.php" ?>
+
+  <div class="view-window" style="background-image:url(img/storebanner.jpg)">
+   
+      </div>
+<?php include "parts/hot_products.php" ?>
+
+ <?php include "parts/footer.php" ?>
 
 
 </body>
 </html>
+
+
+
