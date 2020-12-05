@@ -23,10 +23,31 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
    <?php include "parts/navbar.php" ?>
 
 
+<!--item page nav -->
+<!--
+   <div class="container">
+      <div class="card">
+      <nav class="nav-crumbs">
+         <ul>
+            <li class=""><a href="index.php">Home</a></li>
+            <li><a href="product_list.php">Shop</a></li>
+            <li><?= $o->category ?></a></li>
+            <li><?= $o->product_name ?></a></li>
+         </ul>
+      </nav>
+      </div>
+
+<script type="text/javascript">
+   $(document).on('click', 'ul li', function(){
+      $(this).addClass(active).siblings().removeClass(active)
+   })
+</script>
+----->
+
    <div class="container">
       <div class="grid gap">
          <div class="col-xs-12 col-md-7">
-            <div class="card soft">
+            <div class="card ">
                <div class="image-main">
                   <img src="img/products/<?= $product->image_thumb ?>" alt="">
                </div>
@@ -45,7 +66,9 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                </div>
                <div class="card-section">
                   <div class="form-control"> 
-                     <label for="product-amount" class="form-label">Amount</label>
+                     <label for="product-amount" class="form-label">Quantity (max. 10)
+
+</label>
                      <div class="form-select">
                         <select name="product-amount" id="product-amount">
                            <!-- option[value=$]*10>{$} -->

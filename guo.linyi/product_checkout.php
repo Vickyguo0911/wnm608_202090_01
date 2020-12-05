@@ -21,6 +21,27 @@ include_once "lib/php/functions.php";
          <div>Fill in your information</div>
          <body>
  <h3>Payment Information</h3>
+ <div class="hotdog">hotdog</div>
+
+         <form>
+            <input type="search" class="hotdog dark">
+         </form>
+         <form>
+            <div class="form-control">
+               <div class="hotdog">
+                  <img src="img/icons/email.svg" alt="" class="icon">
+                  <input type="text" id="example-email">
+               </div>
+            </div>
+
+            <div class="form-control">
+               <div class="hotdog">
+                  <input type="password" id="example-password">
+                  <img src="img/icons/password.svg" alt="" class="icon">
+               </div>
+            </div>
+         </form>
+
          <form>
             <div class="form-control">
                <label for="example-1" class="form-label">Card Holder Name</label>
