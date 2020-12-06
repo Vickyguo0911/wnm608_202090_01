@@ -102,7 +102,7 @@ function makeStatement($type,$params=[]) {
          return MYSQLIQuery("INSERT INTO
             `products`
             (
-               product_name`,
+               `product_name`,
                `price`,
                `category`,
                `description`,
@@ -131,7 +131,7 @@ function makeStatement($type,$params=[]) {
          return MYSQLIQuery("UPDATE
             `products`
             SET
-               `title` = '{$params[0]}',
+               `product_name` = '{$params[0]}',
                `price` = '{$params[1]}',
                `category` = '{$params[2]}',
                `description` = '{$params[3]}',

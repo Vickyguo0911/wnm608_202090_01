@@ -12,7 +12,7 @@ return $r.<<<HTML
          </div>
          <figcaption class="product-description">
             <div class="product-price">&dollar;$o->price</div>
-            <div class="product-title">$o->product_name</div>
+            <div class="product_name">$o->product_name</div>
          </figcaption>
       </figure>
    </a>
@@ -93,4 +93,58 @@ return <<<HTML
    <a href="product_checkout.php" class="form-button">Checkout</a>
 </div>
 HTML;
+}
+function makeAdminList($r,$o) {
+return $r.<<<HTML
+<div class="display-flex card flat soft">
+   <div class="flex-none image-thumbs">
+      <img src="img/products/$o->image_thumb">
+   </div>
+   <div class="flex-stretch" style="padding:1em">
+      <div><strong>$o->product_name</strong></div>
+      <div>$o->category</div>
+   </div>
+   <div class="flex-none">
+      <div class="card-section"><a href="admin/?id=$o->id" class="form-button">Edit</a></div>
+      <div class="card-section"><a href="product_item.php?id=$o->id" class="form-button">View</a></div>
+   </div>
+</div>
+HTML;
+}
+
+
+
+
+
+function makeRecommend($a) {
+$products = array_reduce($a,'makeProductList');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
+}
+
+
+
+function recommendSimilar($cat,$id=0,$limit=3) {
+   $result = MYSQLIQuery("
+         SELECT *
+         FROM products
+         WHERE
+            `category`='$cat' AND
+            `id` <> $id
+         ORDER BY rand()
+         LIMIT $limit
+      ");
+   makeRecommend($result);
+}
+function recommendCategory($cat,$limit=3) {
+   $result = MYSQLIQuery("
+         SELECT *
+         FROM products
+         WHERE
+            `category`='$cat'
+         ORDER BY `date_create` DESC
+         LIMIT $limit
+      ");
+   makeRecommend($result);
 }

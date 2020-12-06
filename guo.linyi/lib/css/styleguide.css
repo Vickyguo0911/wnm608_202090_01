@@ -127,21 +127,32 @@ code {
 
 
 /* Component Classes */
+.nav_logo{
+  width: 130px;
+  padding-top: 0.3em;
+
+
+}
+
 .nav ul {
    list-style-type:none;
-   margin-top:0;
-   margin-bottom:0;
-   padding-left:0;
+   margin-top:-25%;
+  
+    margin-left: 200%;
+
+
 }
 
 .nav a {
    display:block;
-   padding:0.3em 0,5em;
+   padding:0.2em 0,5em;
+
+
 }
 
  .nav a:hover {
       background-color:#6069ff;
-      color: var(--color-white);
+      color: var(--color-neutral-yellow);
       text-decoration:none;
    }
 
@@ -155,8 +166,9 @@ code {
    .nav.stretch li {
       flex: 1 1 auto;
       text-align:center;
-      color: #6069ff;
+      color: var(--color-neutral-purpleblue);
        border-radius:1.3em;
+      s
    }
 
    .nav.pills a {
@@ -183,15 +195,21 @@ code {
    background-color:#6069ff;
    color:var(--color-neutral-light);
    line-height:var(--header-height);
-   padding: 1.3em;
+   padding: 0.5em;
 }
 .navbar h1 {
-   font-size:1.3em;
+   font-size:1.5em;
    font-family: OpenSans,SourceSans Pro , sans-serif;
    margin:0;
 }
 .navbar a {
-   padding:0 1em;
+   padding:0 0.5em;
+}
+
+
+.container-product-list-bar {
+background color: var(--color-neutral-light-pink);
+width: 100%;
 }
 
 .footer {
@@ -333,6 +351,15 @@ code {
 
 }
 
+.cardtransparent {
+  background-color:transparent;
+  color: var(--color-neutral-purpleblue);
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  text-align: center;
+  width: 100%;
+}
+
 
 
 .well {
@@ -393,13 +420,20 @@ code {
     border-width: 0;
     background-color: transparent;
     font: inherit;
-    padding: 1em 1em;
-    border-bottom: 1px solid var(--color-neutral-purpleblue);
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border:1px solid var(--color-neutral-purpleblue);
+    color: black;
     outline: 0;
 }
 .form-control {
-    margin: 2em 0;
-
+    margin: 1em 0;
+    color: var(--color-neutral-purpleblue);
+}
+.form-control input{
+  font-size: 1em;
+  color: var(--color-neutral-purpleblue);
+}
 }
 .form-label {
     font-size: 0.8em;
@@ -408,37 +442,24 @@ code {
 
 .btn,
 .form-button {
-    display: inline-block;
-    width: 50%;
-    border-width: 0;
-    font: inherit;
-    border-radius: 0.3em;
-    padding: 0.8em 1em;
- 
-    background-color: var(--color-neutral-purpleblue);
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    outline: 0;
-    -webkit-appearance:none;
+  display: inline-block;
+  width: 50%;
+  border-width: 0;
+  font:inherit;
+  border-radius: 0.3em;
+  padding: 1em 1em;
+  background-color: var(--color-neutral-purpleblue);
+  text-align: center;
+  text-decoration: none;
+  cursor:pointer;
+  outline:0;
+}
 }
 
-.form-select-option {
 
-   display: inline-block;
-    width: 10%;
-    border-width: 0;
-    font: inherit;
-    border-radius: 0.3em;
-    padding: 0.5em 1em;
- 
-    background-color: transparent;
-   border:1px solid var(--color-purchase);
-   color:var(--color-neutral-purpleblue);      
-}
 
 .form-button-categorysearch {
-  display: inline-block;
+    display: inline-block;
     width: 100%;
     border-width: 0;
     font: inherit;
@@ -446,13 +467,15 @@ code {
     padding: 0.8em 1em;
     margin: 1px;
  
-    background-color: var(--color-neutral-purpleblue);
-    color: white;
+    background-color: transparent;
+    border:1px solid var(--color-purchase);
+    color: black;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     outline: 0;
     -webkit-appearance:none;
+    margin:0;
 
 }
 
@@ -463,6 +486,7 @@ code {
 .btn:hover,
 .form-button:hover {
    text-decoration:none;
+
 }
 
    .btn.inline {
@@ -547,6 +571,7 @@ code {
 
 .form-button {
    color:var(--color-white);
+      width: 100%;
 }
 
 .form-button.border {
@@ -566,14 +591,14 @@ code {
    width: 100%;
    line-height: 3rem;
    font: inherit;
-   background-color: var(--color-white);
+   background-color: transparent;
    padding: 0.5em 1.5em;
    border-radius: 2em;
    border-width:0;
    outline:0;
 }
    .hotdog.dark {
-      background-color: var(--color-neutral-purpleblue);
+      background-color: transparent;
       color: var(--color-white);
       width: 100%;
    }
@@ -596,15 +621,14 @@ code {
    }
 
    .hotdog.stack button{
-    background-color: var(--color-neutral-purpleblue);
-    border: none;
-    flex: none;
-    color: white;
+    background-color: transparent;
+    border: 1px solid var(--color-neutral-purpleblue);
+    color: var(--color-neutral-purpleblue);
     padding: 0.8em 1.5em;
    }
 
    .hotdog.stack>:first-child {
-    background-color: white;
+    background-color:transparent;
     border: 1px solid var(--color-neutral-purpleblue);
     width: 91%;
     border-radius: 2em 0em 0em 2em;
@@ -615,9 +639,10 @@ code {
 
 .form-select>select {
     padding: 0.5em 1em;
-    background-color: var(--color-neutral-light-blue);
-    border-width: 0;
-    border-radius: 0.3em;
+    background-color: transparent;
+    border: 1px solid var(--color-neutral-purpleblue);
+    width: 91%;
+    border-radius: 2em 0em 0em 2em;
     cursor: pointer;
     -webkit-appearance:none;
     display:inline-block;
@@ -631,7 +656,7 @@ code {
 .form-select::after {
    position:absolute;
    content:'▼';
-   font-family:Arial,sans-serif;
+   font-family:open sans,sans-serif;
    font-size:0.9em;
    top:50%;
    transform:translateY(-50%);
@@ -724,6 +749,7 @@ code {
   cursor: pointer;
   border-radius: 4px;
 }
+
 
 ------------------
 

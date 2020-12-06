@@ -126,18 +126,11 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
            
             <?php
 
-            echo array_reduce(
-               MYSQLIQuery("
-                  SELECT *
-                  FROM products
-                  WHERE id in (4,6,8)
-               "),
-               'makeProductList'
-            );
+         recommendSimilar($product->category,$product->id);
 
-            ?>
+         ?>
          </div>
-   </div>
+  
    <br>
 <br>
 <br>

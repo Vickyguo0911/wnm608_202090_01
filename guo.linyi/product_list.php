@@ -17,8 +17,8 @@ setDefault('limit','12');
 
 function makeSortOptions() {
    $options = [
-      ["date_create","DESC","Latest Products"],
-      ["date_create","ASC","Oldest Products"],
+      ["date_create","DESC","Newest"],
+      ["date_create","ASC","Oldest"],
       ["price","DESC","Most Expensive"],
       ["price","ASC","Least Expensive"]
    ];
@@ -50,15 +50,20 @@ $products = isset($result['error']) ? [] : $result;
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-   <title>Product List</title>
+
 
    <?php include "parts/meta.php" ?>
 </head>
 <body>
    
    <?php include "parts/navbar.php" ?>
+      
 
    <div class="container">
+      <div class="cardtransparent">
+         <h2 class="">Product list</h2>
+         
+      </div>
 
 
       <form action="product_list.php" method="get" class="hotdog stack">
@@ -119,7 +124,6 @@ $products = isset($result['error']) ? [] : $result;
       </div>
 
 
-      <h2>Product List</h2>
 
       <div class="grid gap">
         
@@ -133,6 +137,32 @@ $products = isset($result['error']) ? [] : $result;
          ?>
       </div>
    </div>
+ <br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+      <div class="container" align="center">
+         <br>
+         <h1>Want $10 off your next purchase?</h1>
+         <br>
+         <p>Sign up for Nature emails today and we'll send you your special offer.</p>
+         <div class="container">
+            <div class="form-control display-flex flex-align-center flex-justify-center" style="max-width: 400px">
+               <!-- <div class="flex-none"> -->
+                  <input type="text" class="form-input" placeholder="Enter your email">
+               <!-- </div> -->
+               <div class="flex-none">
+                  <button type="button" class="form-button third">SUBSCRIBE</button>
+               </div>
+            </div>
+         </div>
+      </div>
 
+   </div>
+<br>
+<br>
+ <?php include "parts/footer.php" ?>
 </body>
 </html>

@@ -14,13 +14,13 @@ $products = makeStatement("products_admin_all",[]);
 
 
 $empty_product = (object)[
-   "title"=>"Banana",
-   "price"=>"10",
-   "category"=>"fruit",
-   "description"=>"Such a nice banana.",
-   "quantity"=>"37325",
-   "image_other"=>"fruit_banana.jpg,fruit_apple.jpg,fruit_kiwi_m.jpg",
-   "image_thumb"=>"fruit_banana_m.jpg"
+   "product_name"=>"The Body wash",
+   "price"=>"9",
+   "category"=>"skincare",
+   "description"=>"A daily multi-vitamin cleanser for skin health—available in fragrance-free and in essential oil blends: Eucalyptus and Sandalwood.",
+   "quantity"=>"9",
+   "image_other"=>"the_body_wash.jpg",
+   "image_thumb"=>"the_body_wash.jpg"
 ];
 
 
@@ -29,7 +29,7 @@ switch(@$_GET['crud']) {
    case 'update':
 
       makeStatement("product_update",[
-         $_POST['product-title'],
+         $_POST['product-name'],
          $_POST['product-price'],
          $_POST['product-category'],
          $_POST['product-description'],
@@ -46,7 +46,7 @@ switch(@$_GET['crud']) {
    case 'create':
 
       $id = makeStatement("product_insert",[
-         $_POST['product-title'],
+         $_POST['product-name'],
          $_POST['product-price'],
          $_POST['product-category'],
          $_POST['product-description'],
@@ -79,7 +79,7 @@ $id = $_GET['id'];
 $thumbs = explode(",",$product->image_other);
 
 $thumbs_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/images/store/$o'>";
+   return $r."<img src='img/products/$o'>";
 });
 
 
@@ -91,7 +91,7 @@ $createorupdate = $id=='new' ? 'create' : 'update';
 $productdata = $id=='new' ? '' : <<<HTML
 <div class="card soft">
    <div class="display-flex">
-      <h2 class="flex-stretch">$product->title</h2>
+      <h2 class="flex-stretch">$product->product_name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
             <img src="img/icons/trash.svg" class="icon">
@@ -116,7 +116,7 @@ $productdata = $id=='new' ? '' : <<<HTML
    </div>
    <div>
       <strong>Images</strong>
-      <div class="image-thumbs"><img src='/images/store/$product->image_thumb'></div>
+      <div class="image-thumbs"><img src='img/products/$product->image_thumb'></div>
       <div class="image-thumbs">$thumbs_elements</div>
    </div>
 </div>
@@ -138,7 +138,7 @@ echo <<<HTML
             <h2>$addoredit Product</h2>
             <div class="form-control">
                <label for="product-title" class="form-label">Title</label>
-               <input id="product-title" name="product-title" type="text" placeholder="Type product title" class="form-input" value="$product->title">
+               <input id="product_name" name="product_name" type="text" placeholder="Type product name" class="form-input" value="$product->product_name">
             </div>
             <div class="form-control">
                <label for="product-category" class="form-label">Category</label>
