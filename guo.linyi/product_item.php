@@ -13,6 +13,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
 ?><!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
    <title>Store: <?= $product->product_name ?></title>
 
@@ -47,7 +48,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
    <div class="container">
       <div class="grid gap">
          <div class="col-xs-12 col-md-7">
-            <div class="card ">
+            <div class="card soft ">
                <div class="image-main">
                   <img src="img/products/<?= $product->image_thumb ?>" alt="">
                </div>
@@ -57,19 +58,25 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
             </div>
          </div>
          <div class="col-xs-12 col-md-5">
-            <form class="card soft flat" method="post" action="product_actions.php?action=add-to-cart">
+            <form class="card soft" method="post" action="product_actions.php?action=add-to-cart">
                <input type="hidden" name="product-id" value="<?= $product->id ?>">
                <div class="card-section">
                   <h2><?= $product->product_name ?></h2>
                   <div>&dollar;<?= $product->price ?></div>
                   <div><a href="product_list.php?t=products_by_category&category=<?= $product->category ?>"><?= $product->category ?></a></div>
                </div>
+
+              <div class="card-section ">
+         <p><?= $product->description ?></p>
+      </div>
+          
+
                <div class="card-section">
                   <div class="form-control"> 
-                     <label for="product-amount" class="form-label">Quantity (max. 10)
+                     <label for="product-amount" class="form-label">Amount (max. 10)
 
 </label>
-                     <div class="form-select">
+                     <div class="form-select-option">
                         <select name="product-amount" id="product-amount">
                            <!-- option[value=$]*10>{$} -->
                            <option value="1">1</option>
@@ -88,7 +95,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                   <div class="form-control">
                      
                      <label for="product-size" class="form-label">Size</label>
-                     <div class="form-select">
+                     <div class="form-select-option">
                         <select name="product-size" id="product-size">
                            <option value="0.5oz">0.5oz</option>
                            <option value="1.0oz">1.0oz</option>
@@ -101,15 +108,18 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                      </div>
                   </div>
                   <div class="form-control">
-                     <input type="submit" class="form-button" value="Add To Cart">
+                     <input type="submit" class="btn sell" value="Add To Cart">
                   </div>
                </div>
           </form>
          </div>
       </div>
+      <!--
    <div class="card soft medium">
          <p><?= $product->description ?></p>
       </div>
+
+   -->
          <h2>Related Products</h2>
 
          <div class="grid gap">
@@ -128,6 +138,34 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
             ?>
          </div>
    </div>
+   <br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+      <div class="container" align="center">
+         <br>
+         <h1>Want $10 off your next purchase?</h1>
+         <br>
+         <p>Sign up for Nature emails today and we'll send you your special offer.</p>
+         <div class="container">
+            <div class="form-control display-flex flex-align-center flex-justify-center" style="max-width: 400px">
+               <!-- <div class="flex-none"> -->
+                  <input type="text" class="form-input" placeholder="Enter your email">
+               <!-- </div> -->
+               <div class="flex-none">
+                  <button type="button" class="form-button third">SUBSCRIBE</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+<br>
+<br>
+ <?php include "parts/footer.php" ?>
 
 </body>
+
 </html>

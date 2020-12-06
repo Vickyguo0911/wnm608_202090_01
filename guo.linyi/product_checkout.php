@@ -4,10 +4,12 @@ include_once "lib/php/functions.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
    <title>Product Checkout</title>
 
    <?php include "parts/meta.php" ?>
+     <?php include "parts/navbar.php" ?>
 </head>
 <body>
 
@@ -21,28 +23,11 @@ include_once "lib/php/functions.php";
          <div>Fill in your information</div>
          <body>
  <h3>Payment Information</h3>
- <div class="hotdog">hotdog</div>
 
-         <form>
-            <input type="search" class="hotdog dark">
-         </form>
-         <form>
-            <div class="form-control">
-               <div class="hotdog">
-                  <img src="img/icons/email.svg" alt="" class="icon">
-                  <input type="text" id="example-email">
-               </div>
-            </div>
+ 
 
-            <div class="form-control">
-               <div class="hotdog">
-                  <input type="password" id="example-password">
-                  <img src="img/icons/password.svg" alt="" class="icon">
-               </div>
-            </div>
-         </form>
 
-         <form>
+   <form>
             <div class="form-control">
                <label for="example-1" class="form-label">Card Holder Name</label>
                <input id="example-1" type="text" placeholder="Text" class="form-input">

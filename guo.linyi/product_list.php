@@ -48,6 +48,7 @@ $products = isset($result['error']) ? [] : $result;
 
 ?><!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
    <title>Product List</title>
 
@@ -58,6 +59,7 @@ $products = isset($result['error']) ? [] : $result;
    <?php include "parts/navbar.php" ?>
 
    <div class="container">
+
 
       <form action="product_list.php" method="get" class="hotdog stack">
 
@@ -86,7 +88,7 @@ $products = isset($result['error']) ? [] : $result;
                ]);
                ?>
 
-               <input type="submit" value="skincare" class="form-button">
+               <input type="submit" value="skincare" class="form-button-categorysearch">
             </form>
             <form action="product_list.php" method="get">
                <?
@@ -96,7 +98,7 @@ $products = isset($result['error']) ? [] : $result;
                ]);
                ?>
 
-               <input type="submit" value="hair" class="form-button">
+               <input type="submit" value="hair" class="form-button-categorysearch">
             </form>
          </div>
          <div class="flex-stretch"></div>

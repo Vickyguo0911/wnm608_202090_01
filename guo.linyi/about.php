@@ -12,7 +12,9 @@ include_once "lib/php/functions.php";
 <body>
 
    <?php include "parts/navbar.php" ?>
-<div class="view-window" style="background-image:url(img/products/rosehair_bodyoil.jpg)">
+<div class="view-window" style="background-image:url(img/storebanner.jpg)">
+   
+      </div>
       <h2>Discover our Products</h2>
    </div>
    <div class="container">

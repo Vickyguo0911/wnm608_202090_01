@@ -7,6 +7,7 @@ $cart_product = cartItemById($_GET['id']);
 
 ?><!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
    <title>Added Product To Cart</title>
 

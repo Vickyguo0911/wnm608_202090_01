@@ -1,6 +1,6 @@
 <div class="container">
 	<h2 style="text-align: left;">Hot Products</h2>
-	<div class="grid gap card white soft">
+	<div class="grid gap card">
 		
 		<?php
 

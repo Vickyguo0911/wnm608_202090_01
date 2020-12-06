@@ -13,6 +13,7 @@ $cart = getCartItems();
 
 ?><!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
    <title>Product Cart</title>
 

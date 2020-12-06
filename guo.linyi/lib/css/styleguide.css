@@ -328,10 +328,15 @@ code {
      
 }
 
+.card.section {
+   background-color:var(--color-white);
+
+}
+
 
 
 .well {
-    padding: 0.5em;
+    padding: 0.8em;
     background-color: #f3f3f3;
     margin: 1px;
 }
@@ -388,12 +393,13 @@ code {
     border-width: 0;
     background-color: transparent;
     font: inherit;
-    padding: 0.5em 1em;
-    border-bottom: 1px solid var(--color-neutral-medium);
+    padding: 1em 1em;
+    border-bottom: 1px solid var(--color-neutral-purpleblue);
     outline: 0;
 }
 .form-control {
-    margin: 1em 0;
+    margin: 2em 0;
+
 }
 .form-label {
     font-size: 0.8em;
@@ -403,11 +409,12 @@ code {
 .btn,
 .form-button {
     display: inline-block;
-    width: 100%;
+    width: 50%;
     border-width: 0;
     font: inherit;
     border-radius: 0.3em;
-    padding: 0.5em 1em;
+    padding: 0.8em 1em;
+ 
     background-color: var(--color-neutral-purpleblue);
     text-align: center;
     text-decoration: none;
@@ -415,6 +422,44 @@ code {
     outline: 0;
     -webkit-appearance:none;
 }
+
+.form-select-option {
+
+   display: inline-block;
+    width: 10%;
+    border-width: 0;
+    font: inherit;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+ 
+    background-color: transparent;
+   border:1px solid var(--color-purchase);
+   color:var(--color-neutral-purpleblue);      
+}
+
+.form-button-categorysearch {
+  display: inline-block;
+    width: 100%;
+    border-width: 0;
+    font: inherit;
+    border-radius: 0.3em;
+    padding: 0.8em 1em;
+    margin: 1px;
+ 
+    background-color: var(--color-neutral-purpleblue);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance:none;
+
+}
+
+
+
+
+-----------------
 .btn:hover,
 .form-button:hover {
    text-decoration:none;
@@ -423,13 +468,18 @@ code {
    .btn.inline {
       width:initial;
       color:var(--color-white);
-     
+
        
    }
 
    .btn.sell {
       background-color:var(--color-neutral-purpleblue);
       color:var(--color-white);
+      position: relative;
+  top: 40%;
+  left: 25%;
+
+
        
    }
 
@@ -504,16 +554,17 @@ code {
    border:1px solid var(--color-purchase);
    color:var(--color-neutral-purpleblue);     
 }
+
+
+
 -------------------------------------
-
-
 
 
 
 .hotdog {
    display: inline-flex;
    width: 100%;
-   /* line-height: 3rem; */
+   line-height: 3rem;
    font: inherit;
    background-color: var(--color-white);
    padding: 0.5em 1.5em;
@@ -522,8 +573,9 @@ code {
    outline:0;
 }
    .hotdog.dark {
-      background-color: var(--color-neutral-yellow);
-      color: var(--color-neutral-light-blue);
+      background-color: var(--color-neutral-purpleblue);
+      color: var(--color-white);
+      width: 100%;
    }
 
    .hotdog input {
@@ -535,10 +587,35 @@ code {
    }
 
 
+.hotdog.stack{
+    padding: 0;
+   }
+
+   .hotdog.stack input{
+    padding: 0.5em 1.5em;
+   }
+
+   .hotdog.stack button{
+    background-color: var(--color-neutral-purpleblue);
+    border: none;
+    flex: none;
+    color: white;
+    padding: 0.8em 1.5em;
+   }
+
+   .hotdog.stack>:first-child {
+    background-color: white;
+    border: 1px solid var(--color-neutral-purpleblue);
+    width: 91%;
+    border-radius: 2em 0em 0em 2em;
+   }
+
+
+
 
 .form-select>select {
     padding: 0.5em 1em;
-    background-color: var(--color-neutral-light);
+    background-color: var(--color-neutral-light-blue);
     border-width: 0;
     border-radius: 0.3em;
     cursor: pointer;
@@ -553,15 +630,16 @@ code {
 }
 .form-select::after {
    position:absolute;
-   content:'â–¼';
+   content:'▼';
    font-family:Arial,sans-serif;
    font-size:0.9em;
    top:50%;
    transform:translateY(-50%);
    right:0.3rem;
    pointer-events:none;
-   color:var(--color-neutral-medium);
+   color:var(--color-neutral-purpleblue);
 }
+
 
 
 .icon {
@@ -647,3 +725,8 @@ code {
   border-radius: 4px;
 }
 
+------------------
+
+
+
+--------------

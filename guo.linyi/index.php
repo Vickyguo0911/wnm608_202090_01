@@ -27,10 +27,11 @@ HTML;
 
 ?><!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <title>Store</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Store</title>
 
    <?php include "parts/meta.php" ?>
       <?php include "parts/navbar.php" ?>
@@ -61,9 +62,7 @@ HTML;
 
 <?php include "parts/new_arrival.php" ?>
 
-  <div class="view-window" style="background-image:url(img/storebanner.jpg)">
-   
-      </div>
+  
 <?php include "parts/hot_products.php" ?>
 <br>
 <br>
