@@ -33,7 +33,9 @@ body {
    margin:0;
    font-size:100%;
    font-family:OpenSans,SourceSans Pro , sans-serif;
+   
 }
+
 
 h1,
 h2,
@@ -127,26 +129,20 @@ code {
 
 
 /* Component Classes */
-.nav_logo{
-  width: 130px;
-  padding-top: 0.3em;
-
-
+.logo{
+  width: 300PX;
+  margin-top: 4px;
 }
 
 .nav ul {
    list-style-type:none;
-   margin-top:-25%;
-  
-    margin-left: 200%;
-
+   
 
 }
 
 .nav a {
    display:block;
-   padding:0.2em 0,5em;
-
+   padding:0.5em 0,8em;
 
 }
 
@@ -168,7 +164,6 @@ code {
       text-align:center;
       color: var(--color-neutral-purpleblue);
        border-radius:1.3em;
-      s
    }
 
    .nav.pills a {
@@ -203,7 +198,7 @@ code {
    margin:0;
 }
 .navbar a {
-   padding:0 0.5em;
+   padding:0 2em;
 }
 
 
@@ -212,8 +207,13 @@ background color: var(--color-neutral-light-pink);
 width: 100%;
 }
 
-.footer {
-   color:black;
+.footerbar {
+   background-color: var(--color-neutral-purpleblue);
+   color:white;
+   text-align: center;
+   height: 125px;
+   padding-top: 60px;
+ 
 }
 /* Style the links inside the pill navigation menu */
 /*
@@ -420,7 +420,7 @@ width: 100%;
     border-width: 0;
     background-color: transparent;
     font: inherit;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.8em;
     background-color: transparent;
     border:1px solid var(--color-neutral-purpleblue);
     color: black;
@@ -447,7 +447,7 @@ width: 100%;
   border-width: 0;
   font:inherit;
   border-radius: 0.3em;
-  padding: 1em 1em;
+  padding: 0.6em 0.6em;
   background-color: var(--color-neutral-purpleblue);
   text-align: center;
   text-decoration: none;

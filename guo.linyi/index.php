@@ -1,28 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
-
-
-function makeProductList($r,$o) {
-return $r.<<<HTML
-<div class="col-xs-12 col-md-4">
-   <a href="product_item.php?id=$o->id">
-      <figure class="product-item">
-         <div class="product-image">
-            <img src="img/products/$o->image_thumb" alt="">
-         </div>
-         <figcaption class="product-description">
-            <div class="product-title">$o->product_name</div>
-            <div class="product-price">&dollar;$o->price/piece</div>
-         </figcaption>
-
-        <a href="product_item.php?id=$o->id" class="btn sell inline">Shop now</a>
-      </figure>
-   </a>
-</div>
-HTML;
-}
-
+include_once "parts/templates.php";
 
 
 ?><!DOCTYPE html>
@@ -38,10 +17,6 @@ HTML;
 </head>
 <body>
    
-
-
-
-
    <div class="view-window" style="background-image:url(img/storebanner1.png)">
     
     <!--  <div class="card cta soft">

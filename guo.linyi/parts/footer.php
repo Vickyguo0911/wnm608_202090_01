@@ -2,7 +2,7 @@
 
 
 
-<div class="navbar"id=>
+<div class="footerbar"id=>
 
 	<!--
 
