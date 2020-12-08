@@ -102,7 +102,7 @@ a.product-item:hover {
     box-shadow:1px 1px 12px rgba(0,0,0,0.4);
 }
 .product-image img {
-   width:60%;
+   width:100%;
 }
 .product-price,
 .product-title {

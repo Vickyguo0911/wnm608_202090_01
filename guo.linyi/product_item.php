@@ -66,10 +66,12 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                   <div><a href="product_list.php?t=products_by_category&category=<?= $product->category ?>"><?= $product->category ?></a></div>
                </div>
 
+               <hr>
+
               <div class="card-section ">
          <p><?= $product->description ?></p>
       </div>
-          
+          <hr>
 
                <div class="card-section">
                   <div class="form-control"> 
@@ -122,7 +124,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
    -->
          <h2>Related Products</h2>
 
-         <div class="grid gap">
+        
            
             <?php
 
