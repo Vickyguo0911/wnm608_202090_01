@@ -93,7 +93,7 @@ $products = isset($result['error']) ? [] : $result;
                ]);
                ?>
 
-               <input type="submit" value="skincare" class="form-button-categorysearch">
+               <input type="submit" value="skincare" class="form-button-category">
             </form>
             <form action="product_list.php" method="get">
                <?
@@ -103,7 +103,7 @@ $products = isset($result['error']) ? [] : $result;
                ]);
                ?>
 
-               <input type="submit" value="hair" class="form-button-categorysearch">
+               <input type="submit" value="hair" class="form-button-category">
             </form>
          </div>
          <div class="flex-stretch"></div>

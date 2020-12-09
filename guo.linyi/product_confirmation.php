@@ -4,20 +4,29 @@ include_once "lib/php/functions.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
    <title>Thanks</title>
 
    <?php include "parts/meta.php" ?>
+   <?php include "parts/navbar.php" ?>
+
+
 </head>
 <body>
 
+  
 
    <div class="container">
       <div class="card soft">
-         <h2>Thanks for Purchasing</h2>
+      	<img src="img/e-commerce illustration-04.png" alt="" class="shoppingwoman" style="height: 550px">
 
-         <a href="product_list.php">Back to shopping</a>
+  <!-- <div>
+
+         <h1>Thanks for Purchasing</h1>
+</div>
+-->
+        <div> <a href="product_list.php"class="btn checkout";>Back to shopping</a>
+        </div>
       </div>
    </div>
 

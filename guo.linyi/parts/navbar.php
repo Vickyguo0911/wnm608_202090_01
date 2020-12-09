@@ -19,10 +19,13 @@
                      <span>Cart</span>
               
                <span class="badge"><?= makeCartBadge() ?></span>
+          
         
             </a></li>
+
          </ul>
       </nav>
    </div>
+   
 </header>
 

@@ -13,7 +13,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
 ?><!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
    <title>Store: <?= $product->product_name ?></title>
 
@@ -122,7 +122,13 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
       </div>
 
    -->
-         <h2>Related Products</h2>
+
+   <br><br>
+   <br><br>
+   <hr>
+   <br>
+   <br>
+         <h2>You may also like:</h2>
 
         
            

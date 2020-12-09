@@ -4,7 +4,6 @@ include_once "lib/php/functions.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
    <title>Product Checkout</title>
 
@@ -71,7 +70,7 @@ include_once "lib/php/functions.php";
         </select>
       </label>
     </div>
-   <div><a href="product_confirmation.php" class="btn sell inline">Confirm Checkout</a></div>
+   <div><a href="product_confirmation.php" class="form-button-confirmcheckout">Confirm Checkout</a></div>
          
     <div class="outcome">
       <div class="error"></div>

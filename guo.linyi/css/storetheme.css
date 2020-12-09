@@ -30,6 +30,8 @@
 
 
 
+
+
 }
 body {
    font-family:Calibri, sans-serif;
@@ -70,7 +72,7 @@ body {
 
 [class*='col-']>.card {
 	height: 100%;
-	margin:0;
+	margin:0.5em;
 }
 
 

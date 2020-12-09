@@ -21,8 +21,9 @@ $cart_product = cartItemById($_GET['id']);
          <h2>Added <?= $product->title ?> To Cart</h2>
 
          <p>There are now <?= $cart_product->amount ?> of <?= $product->title ?> in your cart.</p>
+        
+    <a href="product_list.php"class="form-button-checkcart">Back to shopping</a>
 
-         <a href="product_list.php">Back to shopping</a>
       </div>
    </div>
 
