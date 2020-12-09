@@ -46,7 +46,7 @@ switch(@$_GET['crud']) {
    case 'create':
 
       $id = makeStatement("product_insert",[
-         $_POST['product-name'],
+         $_POST['product_name'],
          $_POST['product-price'],
          $_POST['product-category'],
          $_POST['product-description'],
@@ -165,7 +165,7 @@ echo <<<HTML
                <input id="product-image_other" name="product-image_other" type="text" placeholder="Type product image other" class="form-input" value="$product->image_other">
             </div>
             <div class="form-control">
-               <input class="form-button" type="submit" value="Save">
+               <input class="form-button-save" type="submit" value="Save">
             </div>
          </form>
       </div>

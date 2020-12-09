@@ -17,7 +17,7 @@ include_once "parts/templates.php";
 </head>
 <body>
    
-   <div class="view-window" style="background-image:url(img/storebanner1.png)">
+   <div class="view-window main-window" style="background-image:url(img/store/storebanner01.jpg)">
     
     <!--  <div class="card cta soft">
       <h1>Discover our Products</h1> 
@@ -26,14 +26,14 @@ include_once "parts/templates.php";
 
       <div class="btn explore">
 
-             <a href="product_list.php?id=$o->id" ><h1>Discover Our product</h1></a>
+             <a href="product_list.php?id=$o->id" ><h2>Discover Our product</h2></a>
    
             </div>
       </div>
       <div class="container">
     <div class=" grid margin-top-6 margin-bottom-7">
       
-        <div class="col-sm-8 col-md-6  "><img src="img/products/everyday_face_oil.jpg" alt="" style="height: 400px">
+        <div class="col-sm-12 col-md-6  "><img src="img/products/everyday_face_oil.jpg" alt="" style="height: 400px">
         </div>
         <div class="col-md-1"></div>
       <div class="col-md-5 col-sm-10 ">
