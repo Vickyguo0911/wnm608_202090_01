@@ -29,6 +29,7 @@ $cart = getCartItems();
          <div class="col-xs-12 col-md-8">
             <div class="card soft">
                <h2>Product Cart</h2>
+               
                <?
 
                echo array_reduce($cart,'makeCartList');

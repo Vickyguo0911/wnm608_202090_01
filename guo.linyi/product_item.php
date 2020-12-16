@@ -68,7 +68,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                   <div><a href="product_list.php?t=products_by_category&category=<?= $product->category ?>"><?= $product->category ?></a></div>
                </div>
 
-               <hr>
+       
 
               <div class="card-section ">
          <p><?= $product->description ?></p>
@@ -128,7 +128,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
       <img src="img/illustration/birdbar.png" style="width: 100%; margin-top: 10%;" > 
    </div>
 
-   <hr>
+
    <br>
    <br>
          <h2>You may also like:</h2>
