@@ -140,25 +140,30 @@ code {
 
 /* Component Classes */
 .logo{
-  width: 195PX;
-  margin-top: 4px;
+  width: 100PX;
+  height: 32px;
+ 
 }
 
 .nav ul {
    list-style-type:none;
+   margin-top:0;
+   margin-bottom:0;
+   padding-left:0;
+
    
 
 }
 
 .nav a {
    display:block;
-   padding:0.5em 0,8em;
+   padding:0.2em 0,5em;
 
 }
 
 .nav a:hover {
       background-color:#6069ff;
-      color: var(--color-neutral-yellow);
+      color: var(--color-neutral-light-pink);
       text-decoration:none;
    }
 
@@ -173,7 +178,6 @@ code {
       flex: 1 1 auto;
       text-align:center;
       color: var(--color-neutral-purpleblue);
-       border-radius:1.3em;
    }
 
    .nav.pills a {
@@ -200,15 +204,15 @@ code {
    background-color:#6069ff;
    color:var(--color-neutral-light);
    line-height:var(--header-height);
-   padding: 0.5em;
+
 }
 .navbar h1 {
-   font-size:1.5em;
+   font-size:1.2em;
    font-family: OpenSans,SourceSans Pro , sans-serif;
    margin:0;
 }
 .navbar a {
-   padding:0 2em;
+   padding:0 0.5em;
 }
 
 
@@ -295,7 +299,7 @@ width: 100%;
   }
 } */
 
-.view-window.{
+.view-window {
    position:relative;
    overflow:hidden;
    background-size:cover;
@@ -306,6 +310,19 @@ width: 100%;
 }
 
 
+
+
+
+.view-window.middle-window{
+  position:relative;
+   overflow:hidden;
+   background-size:80%;
+   background-position:center;
+   background-attachment:fixed;
+
+   height:40vh;
+
+}
 
 
 
@@ -321,12 +338,14 @@ width: 100%;
 }
 
    .card.soft {
+     background-color:var(--color-white);
       border-radius:0.5em;
       box-shadow: 0 0 10px rgba(96,105,255,0.2);
    }
    .card.hard {
       border-radius:0.2em;
-      border:2px solid var(--color-neutral-medium);
+      border:1px solid var(--color-neutral-purpleblue);
+      background-color: transparent;
    }
 
    .card.dark {
@@ -459,14 +478,15 @@ width: 100%;
 
 .btn,
 .form-button {
-  display: inline-block;
-  width: 100%;
+  
+  
   border-width: 0;
   font:inherit;
   border-radius: 0em;
-  padding: 0.8em 1em;
+  padding: 0.8em 1.2em;
   margin-top: 30%;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
+  margin-left: 30%;
   background-color: var(--color-neutral-purpleblue);
   color: white;
   text-align: center;
@@ -559,8 +579,8 @@ width: 100%;
    .btn.checkout {
       background-color:var(--color-neutral-orange);
       color:var(--color-white);
-      margin: 0% 30% 20% 35%;
-      width:25%;
+      margin: 0% 30% 30% 5%;
+      width:35%;
       font-size: 20px;
 
        
@@ -652,8 +672,8 @@ width: 100%;
 }
 .form-button-confirmcheckout{
   display: inline-block;
-  width: 20%;
-  margin-left: 80%;
+
+  margin-left: 60%;
   border-width: 0;
   border-radius: 0em;
   padding: 0.8em 1em;
@@ -719,10 +739,10 @@ width: 100%;
       padding:0.5em 1.5em;
    }
    .hotdog.stack button {
-      width: 15%;
+      width: 20%;
       background-color:var(--color-neutral-purpleblue);
       border: 1.5px solid var(--color-neutral-purpleblue);
-      padding: 0.5em 1.5em;
+      padding: 0.6em 0.6em;
       color:var(--color-white);
       flex: none;
    }
@@ -849,10 +869,19 @@ width: 100%;
 /*illustration*/
 
 .bird{ 
-
+   position: relative;
 }
 .shoppingwoman {
-  margin-left: 18%;
+
+  
+}
+
+.birdbar{
+  padding-top: 20px;
+}
+
+.happy {
+  height: 50%;
 }
 ------------------
 
@@ -1027,4 +1056,5 @@ button:active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 

@@ -61,7 +61,7 @@ $products = isset($result['error']) ? [] : $result;
 
    <div class="container">
       <div class="cardtransparent">
-         <h2 class="">Product list</h2>
+         <h1 class="">Our Products</h1>
          
       </div>
 

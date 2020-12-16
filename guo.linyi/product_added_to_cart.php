@@ -20,7 +20,7 @@ $cart_product = cartItemById($_GET['id']);
    <div class="container">
       <div class="card soft">
      
-         <img src="img/bird.png" alt="" class="bird" style=" height: 250px">
+         <img src="img/illustration/giftbar.png" alt="" class="giftbar" style=" width: 100%;">
 
 
          <h2>Added <?= $product->product_name ?> To Cart</h2>

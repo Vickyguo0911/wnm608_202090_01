@@ -62,7 +62,9 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                <input type="hidden" name="product-id" value="<?= $product->id ?>">
                <div class="card-section">
                   <h2><?= $product->product_name ?></h2>
-                  <div>&dollar;<?= $product->price ?></div>
+                  <br>
+                  <div><h2>&dollar;<?= $product->price ?></h2></div>
+                  <br>
                   <div><a href="product_list.php?t=products_by_category&category=<?= $product->category ?>"><?= $product->category ?></a></div>
                </div>
 
@@ -122,9 +124,10 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
       </div>
 
    -->
+   <div class="decobar">
+      <img src="img/illustration/birdbar.png" style="width: 100%; margin-top: 10%;" > 
+   </div>
 
-   <br><br>
-   <br><br>
    <hr>
    <br>
    <br>
@@ -137,14 +140,20 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
          recommendSimilar($product->category,$product->id);
 
          ?>
-         </div>
+   
   
    <br>
 <br>
 <br>
+ <div class="decobar">
+      <img src="img/illustration/birdbar.png" style="width: 100%; margin-top: 10%;" > 
+   </div>
+</div>
 <hr>
 <br>
 <br>
+
+
     <?php include "parts/subscribe.php" ?>
 <br>
 <br>

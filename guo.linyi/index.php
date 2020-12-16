@@ -3,69 +3,63 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-  
-      <title>Store</title>
+   <title>Store</title>
 
    <?php include "parts/meta.php" ?>
-      <?php include "parts/navbar.php" ?>
-
 </head>
 <body>
    
-   <div class="view-window main-window" style="background-image:url(img/store/storebanner01.jpg)">
-    
-    <!--  <div class="card cta soft">
-      <h1>Discover our Products</h1> 
-  
-</div> -->
-
-      <div class="btn explore">
-
-             <a href="product_list.php?id=$o->id" ><h2>Discover Our product</h2></a>
-   
-            </div>
-      </div>
-      <div class="container">
-    <div class=" grid margin-top-6 margin-bottom-7">
-      
-        <div class="col-sm-12 col-md-6  "><img src="img/products/everyday_face_oil.jpg" alt="" style="height: 400px">
-        </div>
-        <div class="col-md-1"></div>
-      <div class="col-md-5 col-sm-10 ">
-        <div class="card transparent ">
-          <h1 class="medium-color">WELCOME</h1>
-          <br>
-          <p>Hello Customer, shop all the natural skin care products! They are all design by ourselves! Our store always pays attention to what customers care about most, so that customers love our products and designs.</p>
-          
-           <a class="btn dark display-inline-block" href="product_list.php"> shop now </a>
-        </div>
-      </div>
-    </div>
-  </div>
+   <?php include "parts/navbar.php" ?>
 
 
-<?php include "parts/new_arrival.php" ?>
 
-<?php include "parts/hot_products.php" ?>
+   <div class="view-window" style="background-image:url(img/store/storebanner01.jpg)">
+      <h2>Welcome to the Store</h2>
+ 
+   </div>
 <br>
 <br>
-<hr>
+<br>
+
+   <div class="container">
+      <h2>New Arrivals</h2>
+
+      <?php recommendCategory('skincare'); ?>
+   </div>
+<br>
+<br>
+        <div class="view-window middle-window" style="background-image:url(img/illustration/middlebanner.png)">
+
+   </div>   
+   <br>
+   <br>    
+   <div class="container">
+
+      <h2>Hot products</h2>
+
+      <?php recommendCategory('hair'); ?>
+   </div>
+
+<br>
+<br>
+<br>
+
+<br>
+ <div class="decobar">
+      <img src="img/illustration/birdbar.png" style="width: 61%; margin-left: 19%; " > 
+      <hr>
+   </div>
 
 
-
-      
 <?php include "parts/subscribe.php" ?>
+
 <br>
 <br>
+
  <?php include "parts/footer.php" ?>
 
 </body>
 </html>
-
-
-
