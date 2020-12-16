@@ -1,7 +1,5 @@
 
 
-
-
 <head>
    <title>Store: <?= $product->product_name ?></title>
 
@@ -696,7 +694,7 @@
 
 
    <div class="container" id="navigations">
-     00
+
       <script>
       const makeNav = (classes='') => {
          const links = ['home','product','about','cart'];
@@ -738,79 +736,6 @@
             </div>
         </div>
 
-<div class="container">
-      <div class="grid gap">
-         <div class="col-xs-12 col-md-7">
-            <div class="card soft ">
-               <div class="image-main">
-                  <img src="img/products/<?= $product->image_thumb ?>" alt="">
-               </div>
-               <div class="image-thumbs">
-                  <?= $thumbs_elements ?>
-               </div>
-            </div>
-         </div>
-         <div class="col-xs-12 col-md-5">
-            <form class="card soft" method="post" action="product_actions.php?action=add-to-cart">
-               <input type="hidden" name="product-id" value="<?= $product->id ?>">
-               <div class="card-section">
-                  <h2><?= $product->product_name ?></h2>
-                  <br>
-                  <div><h2>&dollar;<?= $product->price ?></h2></div>
-                  <br>
-                  <div><a href="product_list.php?t=products_by_category&category=<?= $product->category ?>"><?= $product->category ?></a></div>
-               </div>
-
-               <hr>
-
-              <div class="card-section ">
-         <p><?= $product->description ?></p>
-      </div>
-          <hr>
-
-               <div class="card-section">
-                  <div class="form-control"> 
-                     <label for="product-amount" class="form-label">Amount (max. 10)
-
-</label>
-                     <div class="form-select-option">
-                        <select name="product-amount" id="product-amount">
-                           <!-- option[value=$]*10>{$} -->
-                           <option value="1">1</option>
-                           <option value="2">2</option>
-                           <option value="3">3</option>
-                           <option value="4">4</option>
-                           <option value="5">5</option>
-                           <option value="6">6</option>
-                           <option value="7">7</option>
-                           <option value="8">8</option>
-                           <option value="9">9</option>
-                           <option value="10">10</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="form-control">
-                     
-                     <label for="product-size" class="form-label">Size</label>
-                     <div class="form-select-option">
-                        <select name="product-size" id="product-size">
-                           <option value="0.5oz">0.5oz</option>
-                           <option value="1.0oz">1.0oz</option>
-                           <option value="2.4oz">2.4oz</option>
-                           <option value="8.0oz">8.0oz</option>
-                           <option value="8.4oz">8.4oz</option>
-                           <option value="10.0oz">10.0oz</option>
-
-                        </select>
-                     </div>
-                  </div>
-                  <div class="form-control">
-                     <input type="submit" class="btn sell" value="Add To Cart">
-                  </div>
-               </div>
-          </form>
-         </div>
-      </div>
 
         <div class="container" id="single-item">
         	<h2>Single item</h2>
