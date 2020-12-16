@@ -20,12 +20,12 @@ $cart_product = cartItemById($_GET['id']);
    <div class="container">
       <div class="card soft">
      
-         <img src="img/illustration/giftbar.png" alt="" class="giftbar" style=" width: 100%;">
+         <img src="img/illustration/birdgiftbar.png" alt="" class="giftbar" style=" width: 100%;">
 
 
-         <h2>Added <?= $product->product_name ?> To Cart</h2>
+         <h2 style="text-align: center;">Added <?= $product->product_name ?> To Cart</h2>
 
-         <p>There are now <?= $cart_product->amount ?> of <?= $product->product_name ?> in your cart.</p>
+         <p style="text-align: center;">There are now <?= $cart_product->amount ?> of <?= $product->product_name ?> in your cart.</p>
 
          <div class="display-flex">
             <div class="flex-none">

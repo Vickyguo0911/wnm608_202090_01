@@ -21,8 +21,8 @@ include_once "lib/php/functions.php";
       <div class="card soft">
       	<img src="img/illustration/happythree.png" alt="" class="happy"  style="width:100%;">
 
-         <h1>Thank you for your purchase!</h1>
-         <p> Hi, We're getting your order ready to be shipped. We will notify you when is has been seet. </p>
+         <h1 style="text-align: center;">Thank you for your purchase!</h1>
+         <p style="text-align: center;"> Hi, We're getting your order ready to be shipped. We will notify you when is has been sent. </p>
 <br>
 <br>
 <br>

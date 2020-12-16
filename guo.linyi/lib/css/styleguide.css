@@ -44,6 +44,7 @@ h4,
 h5,
 h6 {
    font-family:OpenSans,SourceSans Pro , sans-serif;
+
 }
 
 a {
@@ -52,7 +53,9 @@ a {
    color:inherit;
 }
 a:hover {
-   text-decoration: underline;
+  
+  color:var(--color-neutral-orange);
+  background-color: white;
 }
 
 p {
@@ -136,7 +139,11 @@ code {
 
 .medium-color{color:var(--color-neutral-purpleblue);}
 
-
+.container.about {
+  max-width:600px;
+   margin-right: auto;
+   margin-left: auto;
+}
 
 /* Component Classes */
 .logo{
@@ -163,7 +170,7 @@ code {
 
 .nav a:hover {
       background-color:#6069ff;
-      color: var(--color-neutral-light-pink);
+      color: var(--color-neutral-orange);
       text-decoration:none;
    }
 
@@ -226,7 +233,7 @@ width: 100%;
    background-color: var(--color-neutral-purpleblue);
    color:white;
    text-align: center;
-   height: 125px;
+   height: 175px;
    padding-top: 60px;
  
 }
@@ -241,14 +248,12 @@ width: 100%;
   font-size: 17px;
   border-radius: 5px; 
 }
-
 /* Change the color of links on mouse-over */
 /*
 .pill-nav a:hover {
   background-color: #f3f3f3;
   color: black;
 }
-
 /* Add a color to the active/current link */
 /*
 .pill-nav a.active {
@@ -258,14 +263,12 @@ width: 100%;
 .pill-nav .search-container {
   float: right;
 }
-
 .pill-nav input[type=text] {
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
   border: none;
 }
-
 .pill-nav .search-container button {
   float: right;
   padding: 6px 10px;
@@ -276,12 +279,9 @@ width: 100%;
   border: none;
   cursor: pointer;
 }
-
 .pill0nav .search-container button:hover {
   background: #ccc;
 }
-
-
 @media screen and (max-width: 600px) {
   .pill-nav .search-container {
     float: none;
@@ -329,7 +329,7 @@ width: 100%;
 
 .card {
    background-color:var(--color-white);
-   padding:1em;
+   padding:2em;
    margin-top:1em;
    margin-bottom:1em;
 
@@ -486,7 +486,7 @@ width: 100%;
   padding: 0.8em 1.2em;
   margin-top: 30%;
   margin-bottom: 5%;
-  margin-left: 30%;
+  margin-left: 0;
   background-color: var(--color-neutral-purpleblue);
   color: white;
   text-align: center;
@@ -579,7 +579,7 @@ width: 100%;
    .btn.checkout {
       background-color:var(--color-neutral-orange);
       color:var(--color-white);
-      margin: 0% 30% 30% 5%;
+      margin: 0% 30% 50% 40%;
       width:35%;
       font-size: 20px;
 
@@ -628,7 +628,6 @@ width: 100%;
    color:var(--color-neutral-orange); 
        
    }
-
    .btn.explore {
     background-color: var(--color-neutral-orange);
     color:var(--color-white); 
@@ -954,7 +953,6 @@ button {
   line-height: 38px;
   outline: none;
 }
-
 */
 
 button:focus {
@@ -1056,5 +1054,168 @@ button:active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+------------
+/* PAYMENT SECTION */
+
+.payment {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 600px;
+  height: 383px;
+  background: white;
+}
+.payment header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 42px;
+  border-bottom: 1px solid rgba(0,0,0, .12);
+}
+.payment header h1 {
+  margin: 0 0 0 10px;
+  font: 500 20px OpenSans, sans-serif;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, .87);
+}
+.payment header a {
+  display: flex;
+  padding: 2px;
+  border: 1px solid #0D47A1;
+  border-radius: 2px;
+  font: 10px OpenSans, sans-serif;
+  text-decoration: none;
+  color: #0D47A1;
+  fill: #0D47A1;
+  transition: all .2s ease;
+}
+.payment header a .icon-text {
+  margin: 0 4px;
+}
+.payment header a:hover {
+  border-color: #00C853;
+  color: red;
+  fill: black;
+}
+
+/* payment form */
+
+.payment form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.payment .name-on-card,
+.payment .card-number,
+.payment .expiration-date-cvv {
+  position: relative;
+  width: 600px;
+  margin: 16px 0;
+  padding-top: 20px;
+}
+.payment .name-on-card,
+.payment .card-number,
+.expiration-date,
+.cvv {
+  border-bottom: 2px solid rgba(0,0,0, .12);
+}
+.payment form label {
+  display: block;
+  position: absolute;
+  font: 500 14px Dosis, sans-serif;
+  opacity: .40;
+  transform: translate(6px, -20px);
+  transition: all .2s ease;
+}
+.payment form input:focus ~ label,
+.payment form input:not(:placeholder-shown) ~ label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: translate(0, -36px);
+}
+.payment form input {
+  border: none;
+  font: 300 16px "Open Sans", sans-serif;
+  color: rgba(0,0,0, .87);
+}
+#name-on-card-field,
+#card-number-field {
+  width: 150px;
+}
+.payment form input:focus {
+  outline: none;
+}
+
+.expiration-date-cvv {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0;
+}
+.expiration-date,
+.cvv {
+  position: relative;
+  width: 200px;
+}
+#expiration-date-field,
+#cvv-field {
+  width: 100px;
+}
+
+.confirm-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 36px;
+  width: 136px;
+  background: var(--color-neutral-purpleblue);
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  transition: all .2s ease;
+}
+.confirm-button:hover {
+  opacity: .8;
+}
+.confirm-button__text {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  font: 700 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+.confirm-button__icon {
+  margin-left: 10px;
+  fill: white;
+}
+
+#name-on-card-field + svg,
+#card-number-field + svg,
+#expiration-date-field + svg,
+#cvv-field + svg
+{
+  fill: #00C853;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+#name-on-card-field:valid + svg,
+#card-number-field:valid + svg,
+#expiration-date-field:valid + svg,
+#cvv-field:valid + svg
+{
+  opacity: 1;
+}
+.form-validation-message {
+  font: italic 300 12px "Open Sans", sans-serif;
+  color: #00C853;
+  opacity: 0;
+}
+form:valid > .form-validation-message {
+  opacity: 1;
+}
+--------------------------
 
 

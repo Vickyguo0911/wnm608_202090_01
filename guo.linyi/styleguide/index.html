@@ -1,3 +1,19 @@
+
+
+
+
+<head>
+   <title>Store: <?= $product->product_name ?></title>
+
+   <?php include "parts/meta.php" ?>
+</head>
+<body>
+   
+   <?php include "parts/navbar.php" ?>
+
+
+
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -39,7 +55,6 @@
             <li><a href="styleguide/#layout">Layout</a></li>
 
             <li><a href="styleguide/#navigations">Navigations</a></li>
-            <li><a href="styleguide/#product-list-version1">Product List version1</a></li>
             <li><a href="styleguide/#tables">Tables </a></li>
             <li><a href="styleguide/#forms">Forms </a></li>
              <li><a href="styleguide/#buttons">Buttons </a></li>
@@ -335,7 +350,7 @@
    </div>
 </div>
 -->
-
+<!--
 
  <div class="container" id="product list">
 	<h2> Product list Version 1 </h2>
@@ -388,6 +403,7 @@
            </div>
 
  </div>
+-->
    <!---------------------------------------------------------->
 	 
 
@@ -505,27 +521,7 @@
             </div>
          </form>
 
-         <h3>Buttons</h3>
-
-         <div class="form-control">
-            <button type="button" class="btn checkout">Button</button>
-         </div>
-         <div class="form-control">
-            <input type="button" class="form-button border" value="Button">
-         </div>
-         <div class="form-control">
-            <div class="display-flex flex-align-center">
-               <div class="flex-stretch">Chose on the right</div>
-               <div class="flex-none"><a href="#" class="btn shop">Button</a></div>
-            </div>
-         </div>
-         <div class="form-control">
-            <a href="#" class="btn sell">Button</a>
-         </div>
-         <div class="form-control">
-            <a href="#" class="btn inline">Button</a>
-            <a href="#" class="btn checkout inline">Button</a>
-         </div>
+  
 
          <h3>Hotdog</h3>
 
@@ -672,17 +668,35 @@
          </div>
       </div>
    </div>
+<header class="navbar">
+   <div class="container display-flex flex-align-center">
+      <div class="flex-none"><h1><a href="index.php">N A T U R E</a></h1></div>
+      <div class="flex-stretch"></div>
+      
+      <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
+      <nav class="nav flex-none">
+         <ul class="display-flex">
+            <li><a href="product_list.php">Shop</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="product_cart.php">
+               <span>Cart</span>
+               <span class="badge"><?= makeCartBadge() ?></span>
+            </a></li>
+         </ul>
+      </nav>
+   </div>
+</header>
 
    <div class="container">
       <h2>View Window</h2>
 
-      <div class="view-window" style="background-image:url(img/banner05.jpg)"></div>
+      <div class="view-window" style="background-image:url(img/store/storebanner1.png)"></div>
 
    </div>
 
 
    <div class="container" id="navigations">
-      <h2>Store Navigation</h2>
+     00
       <script>
       const makeNav = (classes='') => {
          const links = ['home','product','about','cart'];
@@ -698,23 +712,24 @@
       }
       </script>
 
+<!--
       <div class="card soft">
          <script>makeNav('nav stretch')</script>
       </div>
-
+-->
        <div class="container" id="store button">
         <h2>Buttons</h2>
         <div class="card soft display-flex grid ">
         <div class="col-3">
             
-                <a href="#" class="btn checkout inline">Button</a>
+                <a href="#" class="btn form"style="width：50%">Button </a>
           </div>
             <div class="col-3">
-                <a href="#" class="btn type inline ">Button</a>
+                <a href="#" class="btn type inline " style="padding: 12px;">Button</a>
                 </div>
             <div class="col-3">
             
-                <a href="#" class="btn sell inline ">Button</a>
+                <a href="#" class="btn checkout "style="padding: 10px;">Button</a>
             </div>
             <div class="col-3">
             
@@ -723,20 +738,92 @@
             </div>
         </div>
 
+<div class="container">
+      <div class="grid gap">
+         <div class="col-xs-12 col-md-7">
+            <div class="card soft ">
+               <div class="image-main">
+                  <img src="img/products/<?= $product->image_thumb ?>" alt="">
+               </div>
+               <div class="image-thumbs">
+                  <?= $thumbs_elements ?>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-5">
+            <form class="card soft" method="post" action="product_actions.php?action=add-to-cart">
+               <input type="hidden" name="product-id" value="<?= $product->id ?>">
+               <div class="card-section">
+                  <h2><?= $product->product_name ?></h2>
+                  <br>
+                  <div><h2>&dollar;<?= $product->price ?></h2></div>
+                  <br>
+                  <div><a href="product_list.php?t=products_by_category&category=<?= $product->category ?>"><?= $product->category ?></a></div>
+               </div>
+
+               <hr>
+
+              <div class="card-section ">
+         <p><?= $product->description ?></p>
+      </div>
+          <hr>
+
+               <div class="card-section">
+                  <div class="form-control"> 
+                     <label for="product-amount" class="form-label">Amount (max. 10)
+
+</label>
+                     <div class="form-select-option">
+                        <select name="product-amount" id="product-amount">
+                           <!-- option[value=$]*10>{$} -->
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                           <option value="8">8</option>
+                           <option value="9">9</option>
+                           <option value="10">10</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="form-control">
+                     
+                     <label for="product-size" class="form-label">Size</label>
+                     <div class="form-select-option">
+                        <select name="product-size" id="product-size">
+                           <option value="0.5oz">0.5oz</option>
+                           <option value="1.0oz">1.0oz</option>
+                           <option value="2.4oz">2.4oz</option>
+                           <option value="8.0oz">8.0oz</option>
+                           <option value="8.4oz">8.4oz</option>
+                           <option value="10.0oz">10.0oz</option>
+
+                        </select>
+                     </div>
+                  </div>
+                  <div class="form-control">
+                     <input type="submit" class="btn sell" value="Add To Cart">
+                  </div>
+               </div>
+          </form>
+         </div>
+      </div>
 
         <div class="container" id="single-item">
         	<h2>Single item</h2>
         	<div class="card soft grid">
       <div class="col-xs-12 col-md-8">
          <div class="item-image">
-         	<img src="img/banner03.jpg" alt="table" style="height: 400px"> 
+         	<img src="img/products/rosehair_bodyoil.jpg" alt="table" style="height: 400px"> 
          </div>
      </div>
 <div class="col-xs-12 col-md-4">
 	<div class="item-intro">
-	<h2>Facial Oil Set</h2>
+	<h2>Rose hair body oil</h2>
 	<div class="item-price"> <h3> $125.00 </h3> </div>
-	<div class="item-number"> <h5> Item #2172526 </h5> </div>
 	<div class="item-size"> <h5> Size:1.7oz / 50ml</h5></div>
 	<div class="item-size"> <h4> Description:</h4></div>
 	<div class="item-intro item-body-text">
@@ -753,7 +840,7 @@
 </div>
 
 
-<a href="#" class="btn checkout inline">Add to cart</a>
+<a href="#" class="form-button">Add to cart</a>
     </div>
   </div>
  </div>
@@ -762,21 +849,21 @@
 
    <!--------------------------------------------------------------------------------------------->
 
-   <h3>Products list version 2</h3>
+   <h2>Products list </h2>
 
          <div class="grid gap">
             <div class="col-xs-12 col-md-4">
                <a href="#">
                   <figure class="product-item">
                      <div class="product-image">
-                        <img src="img/product04.png" alt="">
+                        <img src="img/products/rosehair_bodyoil.jpg" alt="">
                      </div>
                      <figcaption class="product-description">
                         <div class="product-price">&dollar;32.00</div>
                         <br>
                         <div class="product-title">Ultra Facial Cream</div>
                         <br>
- <a href="#" class="btn sell inline">Shop now</a>
+ 
 
               
                      </figcaption>
@@ -788,15 +875,14 @@
                <a href="#" class="display-block">
                   <figure class="product-item">
                      <div class="product-image">
-                        <img src="img/product05.png" alt="">
+                        <img src="img/products/everyday_face_moisturizer.jpg" alt="">
                      </div>
                      <figcaption class="product-description">
                         <div class="product-price">&dollar;32.00</div>
                         <br>
                         <div class="product-title">Ultra Facial Cream</div>
                          <br>
- <a href="#" class="btn sell inline">Shop now</a>
-               
+ 
 
                      </figcaption>
                   </figure>
@@ -806,7 +892,7 @@
                <a href="#">
                   <figure class="product-item">
                      <div class="product-image">
-                        <img src="img/product06.png" alt="">
+                        <img src="img/products/sugar_lemon_body_lotion.jpg" alt="">
                      </div>
                      <figcaption class="product-description">
                         <div class="product-price">&dollar;32.00</div>
@@ -814,14 +900,13 @@
                         <div class="product-title">Ultra Facial Cream</div>
                          <br>
 
-                <a href="#" class="btn sell inline">Shop now</a>
-
+             
                      </figcaption>
                   </figure>
                </a>
             </div>
          </div>
-      </div>
+
    </div>
  <div class="container" id="shipping address">
  	<div class="card soft ">
@@ -867,7 +952,66 @@
                </div>
 
             </div>
+
          </form>
+      </div>
+
+      <br>
+      <br>
+      <hr>
+         <div class="container">
+     
+         <img src="img/illustration/happythree.png" alt="" class="happy"  style="height: 80% width：100%;padding-left: 15%;">
+
+         <h1>Thank you for your purchase!</h1>
+         <p style="text-align: center;"> Hi, We're getting your order ready to be shipped. We will notify you when is has been sent. </p>
+<br>
+<br>
+<br>
+       <a href="product_list.php"class="btn checkout";>Back to shopping</a>
+       <br>
+       <br>
+       <br>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <hr>
+   <div class="container" align="center">
+         <br>
+         <h1>Want $10 off your next purchase?</h1>
+         <br>
+         <p>Sign up for Nature emails today and we'll send you your special offer.</p>
+         <div class="container">
+            <div class="form-control display-flex flex-align-center flex-justify-center" style="max-width: 400px">
+               <!-- <div class="flex-none"> -->
+                  <input type="text" class="form-input" placeholder="Enter your email">
+               <!-- </div> -->
+               <div class="flex-none">
+                  <button type="button" class="form-button-subscribe">SUBSCRIBE</button>
+               </div>
+            </div>
+         </div>
+      </div>
+<div class="footerbar"id=>
+
+   <!--
+
+         <h3>SUPPORT</h3>
+         <a href="">Contact Us</a>
+         <a href="">Help & FAQ</a>
+         
+         <h3>STORES & CORPORATE</h3>
+         <a href="">Store Locations & Events</a>
+         <a href="">Website Terms of use</a>
+-->
    
+<div class="storefooter container">
+      By Vicky Guo
+      <a href="admin">© 2020 User Admin</a>
+   </div>
+</footer>
+
 </body>
 </html>

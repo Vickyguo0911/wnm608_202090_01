@@ -18,14 +18,13 @@ include_once "parts/templates.php";
 
    <div class="view-window" style="background-image:url(img/store/storebanner01.jpg)">
       <h2>Welcome to the Store</h2>
- 
    </div>
 <br>
 <br>
 <br>
 
    <div class="container">
-      <h2>New Arrivals</h2>
+      <h1 style="text-align: center;">New Arrivals</h1>
 
       <?php recommendCategory('skincare'); ?>
    </div>
@@ -38,7 +37,7 @@ include_once "parts/templates.php";
    <br>    
    <div class="container">
 
-      <h2>Hot products</h2>
+      <h1 style="text-align: center;">Hot Products</h1>
 
       <?php recommendCategory('hair'); ?>
    </div>
