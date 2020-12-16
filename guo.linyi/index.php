@@ -19,6 +19,8 @@ include_once "parts/templates.php";
    <div class="view-window" style="background-image:url(img/store/storebanner01.jpg)">
       <h2>Welcome to the Store</h2>
    </div>
+
+   
 <br>
 <br>
 <br>
