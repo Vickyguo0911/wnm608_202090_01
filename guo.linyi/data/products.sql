@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 16, 2020 at 11:26 AM
+-- Generation Time: Dec 17, 2020 at 10:11 PM
 -- Server version: 5.6.49-cll-lve
 -- PHP Version: 7.3.6
 
@@ -59,7 +59,7 @@ INSERT INTO `products` (`id`, `product_name`, `price`, `category`, `description`
 (10, 'Texturizing Hair Spray\r\n', 26, 'hair', 'An ultra-lightweight product that combines the best parts of dry shampoo and hair spray, to build incredible volume and texture.', 6, 'texturizing_hair_spray.jpg', 'texturizing_hair_spray.jpg', 'texturizing_hair_spray.jpg', '2020-11-09 01:08:34', '2020-11-09 01:08:34'),
 (11, 'The Rose Hair Body Oil', 32, 'skincare', 'This protective hair oil and hydrating moisturizer that doubles as a perfume does it all. A fusion of rose hip oil, shea oil, and absinthium oil restores moisture, adds a dewy glow, silences frizz, and leaves you smelling like our velvety-rich rose fragrance Melrose Place Eau de Parfum.', 15, 'rosehair_bodyoil.jpg', 'rosehair_bodyoil.jpg', 'rosehair_bodyoil.jpg', '2020-11-09 01:12:50', '2020-11-09 01:12:50'),
 (12, 'Sugar Lemon Body Lotion', 32, 'skincare', 'A sweet, lemon-scented luxury body moisturizing lotion.', 6, 'sugar_lemon_body_lotion.jpg', 'sugar_lemon_body_lotion.jpg', 'sugar_lemon_body_lotion.jpg', '2020-11-09 01:12:50', '2020-11-09 01:12:50'),
-(28, 'The Body wash', 9, 'skincare', 'A daily multi-vitamin cleanser for skin health—available in fragrance-free and in essential oil blends: Eucalyptus and Sandalwood.', 9, '', 'the_body_wash.jpg', 'the_body_wash.jpg', '2020-12-16 10:57:29', '2020-12-16 10:57:29');
+(37, 'The Body wash', 9, 'skincare', 'A daily multi-vitamin cleanser for skin health—available in fragrance-free and in essential oil blends: Eucalyptus and Sandalwood.', 9, '', 'the_body_wash.jpg', 'the_body_wash.jpg', '2020-12-17 22:09:19', '2020-12-17 22:09:19');
 
 --
 -- Indexes for dumped tables
@@ -79,7 +79,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
